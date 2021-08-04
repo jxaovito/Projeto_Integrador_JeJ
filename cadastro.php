@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-    include('include/mysql.php');
-=======
 include_once(dirname(__FILE__). "/../banco.php");
->>>>>>> e5d2ef57686a8aa51b57f44bc880fb3f93121614
 
 if ($_POST) {
     $senha = $_POST['senha'];

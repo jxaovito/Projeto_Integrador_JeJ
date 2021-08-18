@@ -11,7 +11,7 @@
             echo 'Nome: '.$values['nome'].'<br>';
             
 
-            echo "<a href='../admin/inc/deletar/delTurma.php?id=".$values['cod_turma']."'> | Excluir | </a>";
+            echo "<a href='../inc/deletar/delTurma.php?id=".$values['cod_turma']."'> | Excluir | </a>";
             // echo "<a href='altUsuario.php?id=".$values['codigo']."'> | Alterar |</a>";
 
             echo '<hr>';

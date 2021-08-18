@@ -2,7 +2,7 @@
     include_once(dirname(__FILE__). "/../banco.php");
 
 
-    $sql = $pdo-> prepare('SELECT calendario.cod_calendario, calendario.horario_ini, calendario.horario_fim , curso.nome as nomecurso, disciplina.nome as nomedisciplina, professor.nome as nomeprofessor, turma.nome as nometurma FROM calendario 
+    $sql = $pdo-> prepare('SELECT calendario.cod_calendario, calendario.horario_ini, calendario.horario_fim , curso.nome as nomecurso, disciplina.nome as nomedisciplina, professor.nome as nomeprofessor, turma.nome as nometurma, calendario.dia FROM calendario 
                                                                             left join curso on calendario.cod_curso = curso.cod_curso
                                                                             left join disciplina on calendario.cod_disciplina = disciplina.cod_disciplina 
                                                                             left join professor on calendario.cod_professor = professor.cod_professor 
@@ -22,11 +22,13 @@
             echo 'Disciplina: '.$values['nomedisciplina'].'<br>';
             echo 'Professor: '.$values['nomeprofessor'].'<br>';
             echo 'Turma: '.$values['nometurma'].'<br>';
+            echo 'Data: '.$value['data'].'<br>';
 
 
-            echo "<a href='../admin/inc/deletar/delHorario.php?id=".$values['cod_calendario']."'> | Excluir | </a>";
+            echo "<a href='../inc/deletar/delHorario.php?id=".$values['cod_calendario']."'> | Excluir | </a>";
             // echo "<a href='altUsuario.php?id=".$values['codigo']."'> | Alterar |</a>";
 
             echo '<hr>';
         }
     }
+?>

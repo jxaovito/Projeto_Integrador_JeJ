@@ -27,7 +27,7 @@
                             <li class="list-group-item"><a href="disciplina.php">Cadastre uma Disciplina</a></li>
                             <li class="list-group-item"><a href="prof.php">Cadastre um Professor</a></li>
                             <li class="list-group-item"><a href="turma.php">Cadastre uma Turma</a></li>
-                            <li class="list-group-item"><a href="horario.php">Cadastre um Horário</a></li>
+                            <li class="list-group-item"><a href="cronograma.php">Cadastre um Horário</a></li>
                         </ul>
                     </div>
                 </div>

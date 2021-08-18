@@ -15,4 +15,4 @@ if (isset($_POST['cdisciplina'])&& $_POST['randcheck']== $_SESSION['rand']) {
             echo 'Dados não cadastrados';
         }     
             }
-
+?>

@@ -9,7 +9,7 @@ include_once(dirname(__FILE__). "/../banco.php");
         if($sql->execute(array($cod_calendario))){
             if($sql->rowCount() > 0){
                 echo 'Aluno excluído com sucesso!!';
-                header('location:../../horario.php');
+                header('location:../../.php');
             } else{
                 echo 'Código não localizado<br>';
             }

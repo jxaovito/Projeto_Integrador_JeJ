@@ -10,7 +10,7 @@
             echo 'Código: '.$values['cod_disciplina'].'<br>';
             echo 'Nome: '.$values['nome'].'<br>';
 
-            echo "<a href='../admin/inc/deletar/delDisciplina.php?id=".$values['cod_disciplina']."'> | Excluir | </a>";
+            echo "<a href='../inc/deletar/delDisciplina.php?id=".$values['cod_disciplina']."'> | Excluir | </a>";
 
             // echo "<a href='altUsuario.php?id=".$values['codigo']."'> | Alterar |</a>";
 

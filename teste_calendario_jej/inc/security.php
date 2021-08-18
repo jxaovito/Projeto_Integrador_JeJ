@@ -1,5 +1,4 @@
 <?php
-
     @session_start();
     $logado = isset($_SESSION ['is_logged']) ? $_SESSION['is_logged'] : false;
 
@@ -10,5 +9,4 @@
         header("location:login.php");
         session_destroy();
     } 
-
 ?>

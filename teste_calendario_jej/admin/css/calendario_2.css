@@ -60,7 +60,16 @@
     background-color: #518fce;
 }
 .calendar .days .day_num .event.red {
-    background-color: #ce5151;
+    background-color: #e94a4a;
+}
+.calendar .days .day_num .event.purple {
+    background-color: #993399;
+}
+.calendar .days .day_num .event.brown {
+    background-color: #90613f;
+}
+.calendar .days .day_num .event.pink {
+    background-color: #f79bb4;
 }
 .calendar .days .day_num:nth-child(7n+1) {
     border-left: 1px solid #e6e9ea;

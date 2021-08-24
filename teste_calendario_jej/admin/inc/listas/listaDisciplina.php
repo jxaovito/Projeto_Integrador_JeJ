@@ -1,17 +1,19 @@
+<link rel="stylesheet" href="../../css/calendario_2.css">
 <?php
     include_once(dirname(__FILE__). "/../banco.php");
 
 
-    $sql = $pdo-> prepare('SELECT * FROM professor');
+    $sql = $pdo-> prepare('SELECT * FROM disciplina');
     if($sql->execute()){
         $info = $sql->fetchAll(PDO::FETCH_ASSOC);
     
         foreach($info as $key=> $values){
-            echo 'Código: '.$values['cod_professor'].'<br>';
-            echo 'Nome: '.$values['nome'].'<br>';
-           
+            $cor = $values['cor'];
+            $nome = $values['nome'];
+            echo " <div class='d-flex float-start mt-1 mx-2'. style='width:15px;height:15px;background-color: $cor'> </div>$nome<br>";
 
-            echo "<a href='../inc/deletar/delProf.php?id=".$values['cod_professor']."'> | Excluir | </a>";
+            echo "<a href='../../teste_calendario_jej/admin/inc/deletar/delDisciplina.php?id=".$values['cod_disciplina']."'> | Excluir | </a>";
+
             // echo "<a href='altUsuario.php?id=".$values['codigo']."'> | Alterar |</a>";
 
             echo '<hr>';

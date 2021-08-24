@@ -29,7 +29,7 @@ include_once("inc/cadastros/cadHorario.php");
                     </label>
                     <input type="time" name="hFim" id="hFim" class="form-control">
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label for="hCurso" class="form-label">
                         <h3>Selecione um Curso</h3>
                     </label>
@@ -54,7 +54,7 @@ include_once("inc/cadastros/cadHorario.php");
                         ?>
                     </select>
 
-                </div>
+                </div> -->
                 <div class="mb-3">
                     <label for="hDisicplina" class="form-label">
                         <h3>Selecione uma Disciplina</h3>
@@ -98,7 +98,7 @@ include_once("inc/cadastros/cadHorario.php");
                         ?>
                     </select>
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label for="hTurma" class="form-label">
                         <h3> Selecione uma Turma</h3>
                     </label>
@@ -118,7 +118,7 @@ include_once("inc/cadastros/cadHorario.php");
                         }
                         ?>
                     </select>
-                </div>
+                </div> -->
                 <div class="mb-3">
 
 
@@ -128,18 +128,6 @@ include_once("inc/cadastros/cadHorario.php");
                         </label>
                         <input type="date" name="nomeData" id="nomeData" class="form-control" placeholder="Digite o nome do Curso:">
                     </div>
-                </div>
-                <div class="mb-3">
-
-                        <label for="nomeCor" class="form-labe">
-                            <h3>Selecione uma cor</h3>
-                        </label>
-                        <select name="nomeCor" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option value="yellow">Amarelo</option>
-                            <option value="red"> Vermelho </option>
-                            <option value="blue"> Azul </option>
-                            <option value="green"> Verde </option>
-                        </select>
                 </div>
 
                 <input type="hidden" value="<?php echo $rand; ?>" name="randcheck" />

@@ -1,10 +1,17 @@
 # Projeto Integrador JeJ
-Equipe
+ Equipe:
+ 
+* @Rafael-SRS
 * @jxaovito
+* @Gabriel0Adrian
+* @Arthurmarcoswenkdossantos
+* @CRISTOPHERLATENEK
+* @joaovsoousa
 
 
 ## Objetivo do Projeto
-Este projeto tem como objetivo realizar um sistema em PHP que ...
+  Este projeto tem como objetivo realizar um sistema em PHP que
+facilite a visualização e criação de cronogramas.
 
 ## Modo de uso
 
@@ -16,11 +23,4 @@ Este projeto tem como objetivo realizar um sistema em PHP que ...
 * Se senha inicial do Administrador precisa ser definida via Banco de Dados | a senha é xxx
 
 ### Como cadastrar novos usuários
-*
-
-### Como cadastrar horários de cursos
-*
-
-
-
-
+*Cadastros de novos usuários são feitos diretamente no Banco de Dados.

@@ -23,10 +23,10 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body p-0">
                         <ul class="list-group">
-                            <li class="list-group-item"><a class="teste" href="curso.php">Cadastre um Curso </a></li>
+                            <!-- <li class="list-group-item"><a class="teste" href="curso.php">Cadastre um Curso </a></li> -->
                             <li class="list-group-item"><a href="disciplina.php">Cadastre uma Disciplina</a></li>
                             <li class="list-group-item"><a href="prof.php">Cadastre um Professor</a></li>
-                            <li class="list-group-item"><a href="turma.php">Cadastre uma Turma</a></li>
+                            <!-- <li class="list-group-item"><a href="turma.php">Cadastre uma Turma</a></li> -->
                             <li class="list-group-item"><a href="cronograma.php">Cadastre um Horário</a></li>
                         </ul>
                     </div>

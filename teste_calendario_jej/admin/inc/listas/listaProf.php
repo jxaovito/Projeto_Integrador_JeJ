@@ -2,16 +2,16 @@
     include_once(dirname(__FILE__). "/../banco.php");
 
 
-    $sql = $pdo-> prepare('SELECT * FROM disciplina');
+    $sql = $pdo-> prepare('SELECT * FROM professor');
     if($sql->execute()){
         $info = $sql->fetchAll(PDO::FETCH_ASSOC);
     
         foreach($info as $key=> $values){
-            echo 'Código: '.$values['cod_disciplina'].'<br>';
+            echo 'Código: '.$values['cod_professor'].'<br>';
             echo 'Nome: '.$values['nome'].'<br>';
+           
 
-            echo "<a href='../inc/deletar/delDisciplina.php?id=".$values['cod_disciplina']."'> | Excluir | </a>";
-
+            echo "<a href='../../teste_calendario_jej/admin/inc/deletar/delProf.php?id=".$values['cod_professor']."'> | Excluir | </a>";
             // echo "<a href='altUsuario.php?id=".$values['codigo']."'> | Alterar |</a>";
 
             echo '<hr>';

@@ -27,7 +27,7 @@ if (isset($_GET['meses'])) {
 
 $calendar = new Calendar(date($mydate));
 
-$sql = $pdo->prepare('SELECT calendario.cod_calendario, calendario.horario_ini, calendario.horario_fim , curso.nome as nomecurso, disciplina.nome as nomedisciplina, professor.nome as nomeprofessor, turma.nome as nometurma, calendario.dia, calendario.cor FROM calendario 
+$sql = $pdo->prepare('SELECT calendario.cod_calendario, calendario.horario_ini, calendario.horario_fim , curso.nome as nomecurso, disciplina.nome as nomedisciplina, disciplina.cor as disciplinaCor, professor.nome as nomeprofessor, turma.nome as nometurma, calendario.dia FROM calendario 
                                                                             left join curso on calendario.cod_curso = curso.cod_curso
                                                                             left join disciplina on calendario.cod_disciplina = disciplina.cod_disciplina 
                                                                             left join professor on calendario.cod_professor = professor.cod_professor 
@@ -45,17 +45,13 @@ if ($sql->execute()) {
 		$professor = $values['nomeprofessor'];
 		$turma = $values['nometurma'];
 		$data = $values['dia'];
-		$cor = $values['cor'];
-
-
+		$cor = $values['disciplinaCor'];
+        $deletar = "<a href='../../teste_calendario_jej/admin/inc/deletar/delHorario.php?id=".$values['cod_calendario']."' style='color:white' > x </a>";
+ 
+        $espaco = '&emsp;&emsp;&emsp;&emsp;&ensp;';
 	
 
-			$calendar->add_event("$dataFormatadaIni-$dataFormatadaFim $curso, <br>$disciplina,<br>$professor,<br> ", "$data", 1, "$cor");
-
-			echo "<a href='../deletar/delHorario.php?id=".$values['cod_calendario']."'> | Excluir | </a>";
-
-
-
+			$calendar->add_event("$dataFormatadaIni-$dataFormatadaFim $espaco $deletar <br>$disciplina<br>$professor<br>", "$data", 1, "$cor");
 
 
 

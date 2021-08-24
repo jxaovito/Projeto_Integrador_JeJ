@@ -25,7 +25,6 @@
             echo 'Data: '.$value['data'].'<br>';
 
 
-            echo "<a href='../inc/deletar/delHorario.php?id=".$values['cod_calendario']."'> | Excluir | </a>";
             // echo "<a href='altUsuario.php?id=".$values['codigo']."'> | Alterar |</a>";
 
             echo '<hr>';

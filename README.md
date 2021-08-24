@@ -1,6 +1,7 @@
 # Projeto Integrador JeJ
 Equipe
-* @rafaelsrs
+* @jxaovito
+
 
 ## Objetivo do Projeto
 Este projeto tem como objetivo realizar um sistema em PHP que ...

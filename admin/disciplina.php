@@ -4,7 +4,7 @@ include_once('inc/header.php');
 include_once("inc/cadastros/cadDisciplina.php");
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid shadow-lg">
     <div class="row">
         <div class="col col-2">
             <form action="" method="post" class="">

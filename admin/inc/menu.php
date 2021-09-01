@@ -1,4 +1,16 @@
-
+<?php
+if (isset($_GET['cod_turma'])){
+    $codTurma = $_GET['cod_turma'];
+ } else {
+    $codTurma = "";
+ }
+ 
+ if (isset($_GET['cod_curso'])){
+     $codCurso = $_GET['cod_curso'];
+  } else {
+     $codCurso = "";
+  }
+?>
 <div style="padding: 3px;" class="d-flex align-items-center mb-3 shadow fundo_menu">
     <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
         <img  class="img-fluid " src="img/menularanja.png" alt="">
@@ -37,9 +49,11 @@
                     <div class="accordion-body p-0">
                         <ul class="list-group">
                             <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="curso.php">Cadastre um Curso </a></li> -->
-                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php">Cadastre uma Disciplina</a></li>
-                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php">Cadastre um Professor</a></li>
-                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="turma.php">Cadastre uma Turma</a></li>
+                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php">Cadastre uma Disciplina</a></li>
+                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php">Cadastre um Professor</a></li>  -->
+                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre uma Disciplina</a></li>
+                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre um Professor</a></li>
+                            <!-- <li class="list-group-item"><a href="turma.php">Cadastre uma Turma</a></li>
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="horario.php">Cadastre um Horário</a></li> -->
                         </ul>
 

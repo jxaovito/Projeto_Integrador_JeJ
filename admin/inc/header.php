@@ -18,8 +18,7 @@ $rand = rand();
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/tetris.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/arthur.css">
-
+    <link href="css/arthur.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>

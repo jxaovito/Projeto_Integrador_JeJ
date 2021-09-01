@@ -47,7 +47,7 @@ if (isset($_GET['cod_curso'])){
                 <div class="mb-3">
                     <select name="hCurso" class="form-select form-select-lg mb-3 hidden" aria-label=".form-select-lg example">
                         <?php
-                        include_once(dirname(__FILE__) . "/../banco.php");
+            
                         $sql = $pdo->prepare('SELECT * FROM curso where cod_curso ='.$codCurso);
                         if ($sql->execute()) {
                             $info = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -73,8 +73,8 @@ if (isset($_GET['cod_curso'])){
                     <select name="hDisciplina" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
 
                         <?php
-                        include_once(dirname(__FILE__) . "/../banco.php");
-                        $sql = $pdo->prepare('SELECT * FROM disciplina');
+
+                        $sql = $pdo->prepare('SELECT * from disciplina where cod_curso = '.$codCurso );
                         if ($sql->execute()) {
                             $info = $sql->fetchAll(PDO::FETCH_ASSOC);
 
@@ -94,8 +94,8 @@ if (isset($_GET['cod_curso'])){
                     </label>
                     <select name="hProfessor" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                         <?php
-                        include_once(dirname(__FILE__) . "/../banco.php");
-                        $sql = $pdo->prepare('SELECT * FROM professor');
+    
+                        $sql = $pdo-> prepare('SELECT * FROM professor where cod_curso='.$codCurso.' AND cod_turma='.$codTurma);
                         if ($sql->execute()) {
                             $info = $sql->fetchAll(PDO::FETCH_ASSOC);
 
@@ -112,7 +112,7 @@ if (isset($_GET['cod_curso'])){
                 <div class="mb-3">
                     <select name="hTurma" class="form-select form-select-lg mb-3 hidden" aria-label=".form-select-lg example">
                         <?php
-                        include_once(dirname(__FILE__) . "/../banco.php");
+                      
                         $sql = $pdo->prepare('SELECT * FROM turma WHERE cod_turma = '.$codTurma.' AND cod_curso = '.$codCurso);
                         if ($sql->execute()) {
                             $info = $sql->fetchAll(PDO::FETCH_ASSOC);

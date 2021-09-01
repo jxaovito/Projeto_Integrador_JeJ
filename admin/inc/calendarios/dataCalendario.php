@@ -61,7 +61,7 @@ if ($sql->execute()) {
 		$turma = $values['nometurma'];
 		$data = $values['dia'];
 		$cor = $values['disciplinaCor'];
-        $deletar = "<a href='../../teste_calendario_jej/admin/inc/deletar/delHorario.php?id=".$values['cod_calendario']."&cod_curso=".$codCurso."&cod_turma=".$codTurma." 'style='color:white' > x </a>";
+        $deletar = "<a href='../admin/inc/deletar/delHorario.php?id=".$values['cod_calendario']."&cod_curso=".$codCurso."&cod_turma=".$codTurma." 'style='color:white' > x </a>";
  
         $espaco = '&emsp;&emsp;&emsp;&emsp;&ensp;';
 	

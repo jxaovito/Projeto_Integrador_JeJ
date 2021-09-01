@@ -1,6 +1,6 @@
 <?php
 $titulo = "Administrador";
-include_once('inc/header.php');
+include_once('inc/headerindex.php');
 include_once('inc/banco.php');
 include_once('inc/cadastros/cadCurso.php');
 include_once('inc/cadastros/cadTurma.php');

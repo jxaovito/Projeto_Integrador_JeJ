@@ -24,7 +24,7 @@ include_once('dataCalendario.php');
 				<option value="11">Novembro</option>
 				<option value="12">Dezembro</option>
 			</select>
-			<input class="btn btn-primary" type="submit" value="Escolher">
+			<input class="btn btn-primary" type="submit" value="enviar">
 		</form>
 	</div>
 

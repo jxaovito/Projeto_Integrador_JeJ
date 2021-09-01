@@ -5,6 +5,9 @@
 .a {
     background-color: rgba(212, 212, 212, 0.829)
 }
+.fundologin{
+    background-color: rgba(212, 212, 212, 0.829)
+}
 
 .fundocinza {
     background-color: #e9e6e6;
@@ -44,10 +47,32 @@
 .fundo2 {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
-    opacity: 80%;
 }
-
 .logo {
     padding: 535px 0px 0px 440px !important;
-    margin-top: 35px;
+}
+
+    
+.btn-success {
+    color: rgb(255, 255, 255);
+    background-color: #bea5a5;
+    border-color: #dac0c0;   
+}
+
+.botao:hover{
+	color: #330000;
+	background-color: #65f5f5;
+    border-color: #7adaf1; 
+	/*CSS 3*/
+	
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.f5 {
+    background-color: #5f5f5f;
+}
+.img{
+    width: 200px;
 }

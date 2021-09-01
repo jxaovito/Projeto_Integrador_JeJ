@@ -15,7 +15,7 @@ include_once('inc/headerlogin.php');
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="sidenav">
+<div class="sidenav shadow">
          <div class="login-main-text">
             <h2>Seja bem-vindo!</h2>
             <p>Faça  seu login.</p>
@@ -28,7 +28,7 @@ include_once('inc/headerlogin.php');
             <div class="login-form shadow">
 
 
-            <form action="" method="post" class="my-5 f5 p-4 fundologin">
+            <form action="" method="post" class="my-5 f5 p-4 a">
                 
                 <label class="form-label textmenu " for="id_email">Digite sua e-mail</label>
                 <input type="email" name="email" id="id_email" class="form-control   " >

@@ -38,7 +38,7 @@ if (isset($_GET['cod_turma'])){
                     <div class="accordion-body p-0">
                     <ul class="list-group">
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="curso.php">Cadastre um Curso </a></li>
-                            <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="disciplina.php">Cadastre uma Disciplina</a></li>
+                            <li class="btn"><a style="text-decoration : none;" class=" d-grid gap-2" href="disciplina.php">Cadastre uma Disciplina</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="prof.php">Cadastre um Professor</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="turma.php">Cadastre uma Turma</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" " href="horario.php">Cadastre um Horário</a></li>

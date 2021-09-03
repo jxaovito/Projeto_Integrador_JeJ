@@ -9,7 +9,10 @@ include_once('inc/cadastros/cadTurma.php');
 
 <div class="container">
     <div class="row">
-        <div><button type="button" class="btn btn-warning m-2 float-end" data-bs-toggle="modal" data-bs-target="#modalCurso">
+
+        <div>
+            <a href="?logout=true" style="text-decoration: none;" class="btn btn-primary float-start m-2">Sair</a>
+            <button type="button" class="btn btn-warning m-2 float-end" data-bs-toggle="modal" data-bs-target="#modalCurso">
                 <h6>Cadastro</h6>
             </button>
         </div>

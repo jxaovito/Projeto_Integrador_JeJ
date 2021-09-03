@@ -78,7 +78,7 @@ if (isset($_GET['cod_turma'])){
             </div>
         </div>
     </div>
-    <li class="list-group-item botaofundo"><a href="index.php" style="text-decoration: none;" class="branco">Cronograma</a></li>
+    <li class="list-group-item fundo_menu"><a href="index.php" style="text-decoration: none;" class="branco">Cronograma</a></li>
     <li class="list-group-item fundo_menu"><a href="?logout=true" style="text-decoration: none;" class="branco">Sair</a></li>
     </form>
 </div>

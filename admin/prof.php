@@ -20,6 +20,7 @@ include_once("inc/cadastros/cadProf.php");
                 </div>
                 <input type="hidden" value="<?php echo $rand; ?>" name="randcheck" />
                 <input type="submit" name="cprof" value="Cadastrar" class="btn btn-warning">
+                <?php echo "<a class='btn btn-primary' href='cronograma.php?cod_curso=$codCurso&cod_turma=$codTurma'> Voltar </a>";?>
 
             </form>
         </div>

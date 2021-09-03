@@ -9,19 +9,17 @@ body {
 
 .sidenav {
     height: 100%;
-    background-color: #000;
-    overflow-x: hidden;
+    background-image: url(../img/sidenav3.png);
     padding-top: 20px;
 }
 
-.main {
-    padding: 0px 10px;
-}
+/* .main {
+    margin-top: 1rem;
+} */
 
 @media screen and (max-height: 767px) {
     .sidenav {
         opacity: 0%;
-        background-color: #000000;
     }
     .fundooo {
         margin: 0%;
@@ -44,10 +42,9 @@ body {
     .sidenav {
         width: 40%;
         position: fixed;
-        z-index: 1;
         top: 0;
         left: 0;
-        }
+    }
     .login-form {
         margin-top: 80%;
     }
@@ -77,6 +74,12 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
+}
+
+@media screen and (max-width: 1000) {
+    .sidenav {
+        opacity: 0%;
+    }
 }
 
 .btn-secondary {

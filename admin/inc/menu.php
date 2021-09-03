@@ -54,7 +54,7 @@ if (isset($_GET['cod_turma'])){
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre uma Disciplina</a></li>
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre um Professor</a></li>
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="cronograma.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cronograma</a></li>
-                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="horario.php">Cadastre um Horário</a></li> -->
+                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="horario.php">Cadastre um Horário</a></li> -->
                         </ul>
 
 

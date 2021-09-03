@@ -38,7 +38,7 @@ if (isset($_GET['cod_turma'])){
                     <div class="accordion-body p-0">
                     <ul class="list-group">
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="curso.php">Cadastre um Curso </a></li>
-                            <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="disciplina.php">Cadastre uma Disciplina</a></li>
+                            <li class="btn"><a style="text-decoration : none;" class=" d-grid gap-2" href="disciplina.php">Cadastre uma Disciplina</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="prof.php">Cadastre um Professor</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="turma.php">Cadastre uma Turma</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" " href="horario.php">Cadastre um Horário</a></li>
@@ -53,7 +53,7 @@ if (isset($_GET['cod_turma'])){
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php">Cadastre um Professor</a></li>  -->
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre uma Disciplina</a></li>
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre um Professor</a></li>
-                            <!-- <li class="list-group-item"><a href="turma.php">Cadastre uma Turma</a></li>
+                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="cronograma.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cronograma</a></li>
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="horario.php">Cadastre um Horário</a></li> -->
                         </ul>
 

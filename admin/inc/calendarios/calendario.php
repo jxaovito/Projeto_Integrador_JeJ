@@ -31,5 +31,5 @@ include_once('dataCalendario.php');
 </div>
 
 <script>
-	document.getElementById("meses").value = <?php echo $month;?>;
+	document.getElementById("meses").value = <?php echo isset($month) ? $month : "Selecione um Mês" ; ?>;
 </script>

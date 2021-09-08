@@ -23,9 +23,6 @@ if (isset($_POST['cdisciplina'])&& $_POST['randcheck']== $_SESSION['rand']) {
         $sql = $pdo -> prepare("INSERT INTO disciplina (cod_disciplina,nome,cor,cod_curso) values (null,?,?,$codCurso)");
 
         if($sql -> execute(array($nomeDisciplina,$nomeCor))){
-            echo 'Dados cadastrados com sucesso.';
-        } else {
-            echo 'Dados não cadastrados';
         }     
             }
 ?>

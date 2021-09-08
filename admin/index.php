@@ -15,6 +15,9 @@ include_once('inc/cadastros/cadTurma.php');
             <button type="button" class="btn btn-warning m-2 float-end" data-bs-toggle="modal" data-bs-target="#modalCurso">
                 <h6>Cadastro</h6>
             </button>
+            <button type="button" class="btn btn-primary m-2 float-end" data-bs-toggle="modal" data-bs-target="#modalTurma">
+                        Cadastro Turma
+                    </button>
         </div>
 
 

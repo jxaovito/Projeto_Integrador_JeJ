@@ -14,7 +14,7 @@
                         <label for="hCurso" class="form-label">
                             <h6>Selecione um Curso: </h6>
                         </label>
-                        <div class="margemmodal">
+                        <div class="">
                             <select name="hCurso" class="form-select mb-3" aria-label=".form-select-lg example" value="Selecione um Curso :">
                         </div>
 
@@ -29,7 +29,7 @@
 
 
 
-                                <option value="<?php echo $values['cod_curso'] ?>"> <?php echo $values['nome'] ?></option>
+                                <option value="<?php echo $values['cod_curso'] ?>"> <?php echo mb_strtoupper($values['nome']) ?></option>
                         <?php
                             }
                         }

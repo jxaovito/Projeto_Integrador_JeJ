@@ -33,7 +33,7 @@ if ($sql->execute()) {
                                             $info = $sql->fetchAll(PDO::FETCH_ASSOC);
 
                                             foreach ($info as $key => $values) {
-                                                $turmaNome = $values['nome'];
+                                                $turmaNome = ucwords($values['nome']);
 
                                         ?>
 
@@ -60,9 +60,7 @@ if ($sql->execute()) {
                         </div>
 
 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTurma">
-                        Cadastro Turma
-                    </button>
+                    
                 </div>
             </div>
         </div>

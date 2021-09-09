@@ -14,9 +14,9 @@ include_once("inc/cadastros/cadProf.php");
                 ?>
                 <div class="mb-3">
                     <label for="nomeProf" class="form-label">
-                        <h2>Cadastro Professor: </h2>
+                        <h2 class="font-prof">Cadastro Professor: </h2>
                     </label>
-                    <input type="text" name="nomeProf" id="nomeProf" required class="form-control" placeholder="Digite o nome do Professor:">
+                    <input type="text" name="nomeProf" id="nomeProf" required class="form-control font-prof" placeholder="Digite o nome do Professor:">
                 </div>
                 <input type="hidden" value="<?php echo $rand; ?>" name="randcheck" />
                 <input type="submit" name="cprof" value="Cadastrar" class="btn btn-warning">

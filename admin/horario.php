@@ -81,7 +81,7 @@ if (isset($_GET['cod_curso'])){
                             foreach ($info as $key => $values) {
 
                         ?>
-                                <option value="<?php echo $values['cod_disciplina'] ?>"> <?php echo $values['nome'] ?></option>
+                                <option value="<?php echo $values['cod_disciplina'] ?>"> <?php echo ucfirst($values['nome']) ?></option>
                         <?php
                             }
                         }
@@ -102,7 +102,7 @@ if (isset($_GET['cod_curso'])){
                             foreach ($info as $key => $values) {
 
                         ?>
-                                <option value="<?php echo $values['cod_professor'] ?>"> <?php echo $values['nome'] ?></option>
+                                <option value="<?php echo $values['cod_professor'] ?>"> <?php echo ucwords($values['nome']) ?></option>
                         <?php
                             }
                         }

@@ -28,13 +28,16 @@ if ($sql->execute()) {
         $codProf = $values['cod_professor'];
 
         echo '<div  class="d-flex flex-row p-3 ' . $class . '">'; // apenas para se localizar
+
+       
+
+        echo '<div  class="px-2 flex-fill">';
+        echo '<h6> Professor: </h6>' . ucwords($values['nome']) . '<br>';
+        echo '</div>';
+        
         echo '<div  class="d-flex align-items-center">';
         // echo "<a class='btn btn-outline-danger' style='text-decoration:none;' href='../admin/inc/deletar/delProf.php?id=" . $values['cod_professor'] . "'>  Excluir  </a>";
-        echo "<a class='btn btn-outline-danger' style='text-decoration:none;' href='../admin/inc/deletar/delProf.php?id=$codProf&cod_curso=$codCurso&cod_turma=$codTurma'>  Excluir  </a>";
-        echo '</div>';
-        echo '<div  class="px-2 flex-fill">';
-
-        echo 'Nome: ' . $values['nome'] . '<br>';
+        echo "<a class='btn btn-sm btn-outline-danger' style='text-decoration:none;' href='../admin/inc/deletar/delProf.php?id=$codProf&cod_curso=$codCurso&cod_turma=$codTurma'>  Excluir  </a>";
         echo '</div>';
 
         // echo "<a href='altUsuario.php?id=".$values['codigo']."'> | Alterar |</a>";

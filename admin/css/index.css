@@ -5,3 +5,10 @@ font-weight: bold;
 h6{
 margin:0px;
 }
+.margemmodal{
+    margin:5% 5% 5% 5%;
+}
+.form-select-modal {
+    padding:0% !important;
+    
+}

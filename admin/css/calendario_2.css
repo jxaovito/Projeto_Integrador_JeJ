@@ -78,11 +78,14 @@
     background-color: #fdfdfd;
 }
 .calendar .days .day_num.ignore {
-    background-color: #fdfdfd;
+    background-color: whitesmoke;
     color: #ced2d4;
     cursor: inherit;
 }
 .calendar .days .day_num.selected {
-    background-color: #f1f2f3;
+    background-color: #f6f6f7;
     cursor: inherit;
+}
+.fundocalendario{
+    background-color: rgb(250,250 ,250 );
 }

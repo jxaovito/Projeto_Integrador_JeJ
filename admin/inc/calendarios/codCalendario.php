@@ -29,7 +29,7 @@ class Calendar {
         $html .= ucfirst(utf8_encode(strftime("%B de %Y", strtotime($this->active_year . '-' . $this->active_month . '-' . $this->active_day))));
         $html .= '</div>';
         $html .= '</div>';
-        $html .= '<div class="days">';
+        $html .= '<div class="days fundocalendario">';
 
         function getMonthlist($selected = ''){
             $options = '';

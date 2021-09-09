@@ -21,6 +21,7 @@ $rand = rand();
     <link rel="stylesheet" href="css/tetris.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="css/arthur.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/botao.css">
 </head>
 
 <body>

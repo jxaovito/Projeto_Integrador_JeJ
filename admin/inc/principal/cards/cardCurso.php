@@ -35,7 +35,7 @@ if ($sql->execute()) {
                                             $info = $sql->fetchAll(PDO::FETCH_ASSOC);
 
                                             foreach ($info as $key => $values) {
-                                                $turmaNome = $values['nome'];
+                                                $turmaNome = ucwords($values['nome']);
 
                                         ?>
 
@@ -60,7 +60,6 @@ if ($sql->execute()) {
                                 </li>
                             </ul>
                         </div>
-
 
 
                 </div>

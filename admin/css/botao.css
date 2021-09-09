@@ -18,7 +18,7 @@ body {
 }
 
 .bt {
-    margin-right: 83.8%;
+    margin-right: 0%;
     width: 200px;
     cursor: pointer;
     position: relative;
@@ -322,7 +322,7 @@ body {
 }
 
 .more-bt:hover .sfl,
-.more-bt. .sfl {
+.more-bt .sfl {
     -webkit-transition: .5s;
     transition: .5s;
 }

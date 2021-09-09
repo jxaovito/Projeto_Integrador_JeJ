@@ -10,21 +10,31 @@ include_once('inc/cadastros/cadTurma.php');
 <div class="container">
     <div class="row">
 
-        <div>
-            <a href="?logout=true" style="text-decoration: none;" class="btn btn-primary float-start m-2">Sair</a>
-            <div>
+
+        <div class="d-flex flex-nowrap bd-highlight">
+            <div class="order-3 p-2 bd-highlight">
+                <a href="?logout=true" style="text-decoration: none;" class="btn btn-primary float-start m-2">Sair</a>
+            </div>
+            <!-- <div class="order-3 p-2 bd-highlight">
+            <a class="bt more-bt float-end" href="#modalCurso" data-bs-toggle="modal">
+                    <span class="fl"></span><span class="sfl"></span><span class="cross"></span><i></i>
+                    <p>Sair</p>
+                </a>
+            </div> -->
+            <div class="order-2 p-2 bd-highlight">
+                <a class="bt more-bt float-end" href="#modalTurma" data-bs-toggle="modal">
+                    <span class="fl"></span><span class="sfl"></span><span class="cross"></span><i></i>
+                    <p>Cadastro Turma</p>
+                </a>
+            </div>
+            <div class="order-1 p-2 bd-highlight">
                 <a class="bt more-bt float-end" href="#modalCurso" data-bs-toggle="modal">
                     <span class="fl"></span><span class="sfl"></span><span class="cross"></span><i></i>
                     <p>Cadastrar curso</p>
                 </a>
             </div>
-            <button type="button" class="btn btn-warning m-2 float-end" data-bs-toggle="modal" data-bs-target="#modalCurso">
-                <h6>Cadastro</h6>
-            </button>
-            <button type="button" class="btn btn-primary m-2 float-end" data-bs-toggle="modal" data-bs-target="#modalTurma">
-                Cadastro Turma
-            </button>
         </div>
+
 
 
         <?php

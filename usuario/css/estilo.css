@@ -1,0 +1,49 @@
+body{
+    background-color:#eeeeee;
+}
+.mycontainer{
+    margin-left: 5% !important;
+    margin-right:5% !important;
+}
+
+.teste{
+    text-decoration: none !important;
+    background-color: yellow !important;
+}
+.fundo_menu{
+    background-color: #5f5f5f;
+}
+.img-fluid{
+    width:43px;
+    height:38px;
+}
+
+.branco{
+    color: rgb(255, 255, 255);
+}
+
+a:hover{
+    color:whitesmoke;
+}
+.margin0{
+    margin: 0px !important;
+}
+
+
+.fundolista{
+    background-image: radial-gradient(circle at 62.28% 119.64%, #e0ffa5 0, #e4f995 8.33%, #e8ee84 16.67%, #ebe272 25%, #eed460 33.33%, #f1c64e 41.67%, #f2b53c 50%, #f3a42c 58.33%, #f69221 66.67%, #f8811d 75%, #fb6e1f 83.33%, #fd5b27 91.67%, #ff4630 100%);
+}
+.botaofundo{
+    background-color: rgb(253, 193, 114);
+}
+.botaofundo2{
+    background-color: rgb(255, 166, 0);
+}
+
+.cinza{
+    background-color:#eeeeee;
+}
+.accordion-button-active-color{
+    background-color: rgb(253, 193, 114);
+}
+

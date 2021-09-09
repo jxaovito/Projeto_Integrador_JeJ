@@ -1,3 +1,5 @@
+
+
 <?php
 $sql = $pdo->prepare('SELECT * FROM curso');
 if ($sql->execute()) {
@@ -12,7 +14,7 @@ if ($sql->execute()) {
         <div class="col col-3">
             <div class="card m-2" style="width: 18rem">
 
-                <?php echo "<a  class='btn btn-outline-danger 'href='../admin/inc/deletar/delCurso.php?id=" . $values['cod_curso'] . "'>Excluir</a>"; ?>
+                <a onclick="return confirm('Deseja mesmo excluir o curso?');" class='btn btn-outline-danger' href='inc/deletar/delCurso.php?id=<?php echo $cursoCod?>' >Excluir</a>
 
                 <img src="img/cursinho.jpg" class="card-img-top float-start">
 
@@ -40,10 +42,10 @@ if ($sql->execute()) {
                                                 <li class="list-group-item bg-white p-3">
                                                     <ul class="d-flex p-0 m-0 " style="list-style: none;">
                                                         <li class="flex-fill">
-                                                            <a class="" style="text-decoration: none; color:black" href="cronograma.php?cod_curso=<?php echo $cursoCod ?>&cod_turma=<?php echo $values['cod_turma'] ?>"><?php echo $turmaNome ?></a>
+                                                            <a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?cod_curso=<?php echo $cursoCod ?>&cod_turma=<?php echo $values['cod_turma'] ?>"><?php echo $turmaNome ?></a>
                                                         </li>
                                                         <li >
-                                                            <a style="color: red;"  href="inc/deletar/delTurma.php?id=<?php echo $values['cod_turma']; ?>" title="Excluir"><i class="far fa-trash-alt"></i>
+                                                            <a style="color: red;" class="dropdown-item" href="inc/deletar/delTurma.php?id=<?php echo $values['cod_turma']; ?>" title="Excluir"><i class="far fa-trash-alt"></i>
                                                             </a>
                                                         </li>
                                                         
@@ -60,9 +62,9 @@ if ($sql->execute()) {
                         </div>
 
 
-                    
                 </div>
             </div>
         </div>
 <?php }
 } ?>
+

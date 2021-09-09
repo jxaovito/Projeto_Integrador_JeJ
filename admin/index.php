@@ -52,7 +52,7 @@ include_once('inc/cadastros/cadTurma.php');
 
     </div>
 </div>
-<script>
+<!-- <script>
     function myFunction(valor) {
         var resultadoEspaco = valor.split("|", 2);
         cod_curso = resultadoEspaco[0];
@@ -60,7 +60,7 @@ include_once('inc/cadastros/cadTurma.php');
 
         window.location = "cronograma.php?cod_curso=" + cod_curso + "&cod_turma=" + cod_turma;
     }
-</script>
+</script> -->
 
 
 <?php include_once('inc/footer.php'); ?>

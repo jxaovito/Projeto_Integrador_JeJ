@@ -25,7 +25,7 @@ include_once('inc/headerlogin.php');
             <div class="login-form shadow">
 
 
-            <form action="" method="post" class="my-5  p-4 a">
+            <form action="" method="post" class="my-5 f5 p-4 a">
                 
                 <label class="form-label textmenu " for="id_email">Digite seu e-mail</label>
                 <input type="email" name="email" id="id_email" class="form-control   " >

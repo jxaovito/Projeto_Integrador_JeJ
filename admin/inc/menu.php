@@ -1,4 +1,16 @@
-
+<?php
+if (isset($_GET['cod_turma'])){
+    $codTurma = $_GET['cod_turma'];
+ } else {
+    $codTurma = "";
+ }
+ 
+ if (isset($_GET['cod_curso'])){
+     $codCurso = $_GET['cod_curso'];
+  } else {
+     $codCurso = "";
+  }
+?>
 <div style="padding: 3px;" class="d-flex align-items-center mb-3 shadow fundo_menu">
     <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
         <img  class="img-fluid " src="img/menularanja.png" alt="">
@@ -26,7 +38,7 @@
                     <div class="accordion-body p-0">
                     <ul class="list-group">
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="curso.php">Cadastre um Curso </a></li>
-                            <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="disciplina.php">Cadastre uma Disciplina</a></li>
+                            <li class="btn"><a style="text-decoration : none;" class=" d-grid gap-2" href="disciplina.php">Cadastre uma Disciplina</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="prof.php">Cadastre um Professor</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="turma.php">Cadastre uma Turma</a></li>
                             <li class="btn"><a style="text-decoration: none;" class=" " href="horario.php">Cadastre um Horário</a></li>
@@ -37,10 +49,12 @@
                     <div class="accordion-body p-0">
                         <ul class="list-group">
                             <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="curso.php">Cadastre um Curso </a></li> -->
-                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php">Cadastre uma Disciplina</a></li>
-                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php">Cadastre um Professor</a></li>
-                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="turma.php">Cadastre uma Turma</a></li>
-                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="horario.php">Cadastre um Horário</a></li> -->
+                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php">Cadastre uma Disciplina</a></li>
+                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php">Cadastre um Professor</a></li>  -->
+                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre uma Disciplina</a></li>
+                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre um Professor</a></li>
+                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="cronograma.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cronograma</a></li>
+                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="horario.php">Cadastre um Horário</a></li> -->
                         </ul>
 
 
@@ -64,7 +78,7 @@
             </div>
         </div>
     </div>
-    <li class="list-group-item botaofundo"><a href="index.php" style="text-decoration: none;" class="branco">Cronograma</a></li>
+    <li class="list-group-item fundo_menu"><a href="index.php" style="text-decoration: none;" class="branco">Cronograma</a></li>
     <li class="list-group-item fundo_menu"><a href="?logout=true" style="text-decoration: none;" class="branco">Sair</a></li>
     </form>
 </div>

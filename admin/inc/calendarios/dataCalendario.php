@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 <?php
 include_once(dirname(__FILE__) . "/../banco.php");;
 include 'codCalendario.php';
@@ -34,8 +34,6 @@ if (isset($_GET['cod_turma'])){
 	 $codCurso = "";
   }
 
-  echo $codCurso;
-  echo $codTurma;
 
 
 $calendar = new Calendar(date($mydate));
@@ -61,7 +59,7 @@ if ($sql->execute()) {
 		$turma = $values['nometurma'];
 		$data = $values['dia'];
 		$cor = $values['disciplinaCor'];
-        $deletar = "<a href='../../teste_calendario_jej/admin/inc/deletar/delHorario.php?id=".$values['cod_calendario']."&cod_curso=".$codCurso."&cod_turma=".$codTurma." 'style='color:white' > x </a>";
+        $deletar = "<a href='../admin/inc/deletar/delHorario.php?id=".$values['cod_calendario']."&cod_curso=".$codCurso."&cod_turma=".$codTurma." 'style='color:white' > x </a>";
  
         $espaco = '&emsp;&emsp;&emsp;&emsp;&ensp;';
 	

@@ -321,7 +321,7 @@ body {
 }
 
 .more-bt:hover .sfl,
-.more-bt. .sfl {
+.more-bt .sfl {
     -webkit-transition: .5s;
     transition: .5s;
 }

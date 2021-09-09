@@ -1,5 +1,5 @@
 <?php
-include_once("security.php");
+
 $rand = rand();
 ?>
 <!DOCTYPE html>
@@ -24,6 +24,3 @@ $rand = rand();
 </head>
 
 <body>
-    <?php
-    include_once("menu.php");
-    ?>

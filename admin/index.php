@@ -12,8 +12,12 @@ include_once('inc/cadastros/cadTurma.php');
 
         <div>
             <a href="?logout=true" style="text-decoration: none;" class="btn btn-primary float-start m-2">Sair</a>
+
             <button type="button" class="btn btn-warning m-2 float-end" data-bs-toggle="modal" data-bs-target="#modalCurso">
-                <h6>Cadastro</h6>
+                <h6>Cadastro Curso</h6>
+            </button>
+            <button type="button" class="btn btn-primary btn-sm m-2 float-end" data-bs-toggle="modal" data-bs-target="#modalTurma">
+                Cadastro Turma
             </button>
         </div>
 
@@ -32,7 +36,7 @@ include_once('inc/cadastros/cadTurma.php');
 
     </div>
 </div>
-<script>
+<!-- <script>
     function myFunction(valor) {
         var resultadoEspaco = valor.split("|", 2);
         cod_curso = resultadoEspaco[0];
@@ -40,7 +44,7 @@ include_once('inc/cadastros/cadTurma.php');
 
         window.location = "cronograma.php?cod_curso=" + cod_curso + "&cod_turma=" + cod_turma;
     }
-</script>
+</script> -->
 
 
 <?php include_once('inc/footer.php'); ?>

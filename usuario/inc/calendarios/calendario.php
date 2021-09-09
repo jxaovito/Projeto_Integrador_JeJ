@@ -1,5 +1,16 @@
 <?php
 include_once('dataCalendario.php');
+if (isset($_GET['cod_turma'])) {
+	$codTurma = $_GET['cod_turma'];
+} else {
+	$codTurma = "";
+}
+
+if (isset($_GET['cod_curso'])) {
+	$codCurso = $_GET['cod_curso'];
+} else {
+	$codCurso = "";
+}
 ?>
 
 
@@ -9,7 +20,7 @@ include_once('dataCalendario.php');
 
 	<!-- <div class="pa">
 		<form class="" action="">
-			<select class="btn btn-outline-primary" id="meses" name="meses" >
+			<select class="btn btn-outline-primary" id="meses" name="meses">
 				<option value="" selected disabled hidden>Selecione um mês</option>
 				<option value="1">Janeiro</option>
 				<option value="2">Fevereiro</option>
@@ -56,8 +67,9 @@ include_once('dataCalendario.php');
 		</ul>
 	</div>
 
+
 </div>
 
 <script>
-	document.getElementById("meses").value = <?php echo isset($month) ? $month : "Selecione um Mês" ; ?>;
+	document.getElementById("meses").value = <?php echo isset($month) ? $month : "Selecione um Mês"; ?>;
 </script>

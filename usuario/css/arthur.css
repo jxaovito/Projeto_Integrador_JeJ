@@ -1,0 +1,114 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.main-head {
+    height: 150px;
+    background: #FFF;
+}
+
+.sidenav {
+    height: 100%;
+    background-image: url(../img/sidenav3.png);
+    padding-top: 20px;
+}
+
+/* .main {
+    margin-top: 1rem;
+} */
+
+@media screen and (max-height: 767px) {
+    .sidenav {
+        opacity: 0%;
+    }
+    .fundooo {
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .login-form {
+        margin-top: 10%;
+    }
+    .register-form {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        margin-left: 40%;
+    }
+    .sidenav {
+        width: 40%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .login-form {
+        margin-top: 80%;
+    }
+    .register-form {
+        margin-top: 20%;
+    }
+}
+
+.login-main-text {
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2 {
+    font-weight: 300;
+}
+
+.btn-black {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+.sidenav {
+    width: 27%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1000) {
+    .sidenav {
+        opacity: 0%;
+    }
+}
+
+.btn-secondary {
+    color: rgb(255, 255, 255) !important;
+    background-color: #000000 !important;
+    border-color: #00000046 !important;
+}
+
+
+/* .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000d8 !important;
+    background-color: #fffefef5 !important;
+    background-clip: padding-box;
+    border: 1px solid #0000009f !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+} */
+
+.fundooo {
+    background-image: url(../img/download.jpg);
+}
+
+.textmenu {
+    color: black;
+}

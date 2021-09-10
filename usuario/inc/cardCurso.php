@@ -13,7 +13,7 @@ if ($sql->execute()) {
             <div class="card m-2" style="width: 18rem">
 
 
-                <img src="img/Screenshot_1.png" class="card-img-top float-start shadow">
+                <img src="img/cursao.jpg" class="card-img-top float-start">
 
                 <div class="card-body shadow">
 

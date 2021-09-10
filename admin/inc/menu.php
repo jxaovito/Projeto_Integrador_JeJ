@@ -64,7 +64,7 @@ if (isset($_GET['cod_turma'])){
             </div>
            
             
-   
+            
         </div>
     </div>
     <li class="list-group-item fundo_menu"><a href="index.php" style="text-decoration: none;" class="branco">Início</a></li>

@@ -14,7 +14,7 @@ include_once("inc/cadastros/cadProf.php");
                 ?>
                 <div class="mb-3">
                     <label for="nomeProf" class="form-label">
-                        <h2 class="font-prof">Cadastro Professor: </h2>
+                        <h2  class="fonte">Cadastro Professor: </h2>
                     </label>
                     <input type="text" name="nomeProf" id="nomeProf" required class="form-control font-prof" placeholder="Digite o nome do Professor:">
                 </div>
@@ -25,7 +25,7 @@ include_once("inc/cadastros/cadProf.php");
             </form>
         </div>
         <div class="col col-10">
-            <h2>Lista dos Professores:</h2>
+            <h2 class="fonte">Lista dos Professores:</h2>
             <?php
             include_once("inc/listas/listaProf.php");
             ?>

@@ -65,6 +65,7 @@ if (isset($_GET['cod_curso'])) {
 		</ul>
 		</li>
 		</ul>
+		<a class="btn btn-primary float-end" href="index.php"> Voltar </a>
 	</div>
 
 

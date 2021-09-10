@@ -51,3 +51,8 @@
     padding: 535px 0px 0px 440px !important;
     margin-top: 35px;
 }
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color:transparent;
+}

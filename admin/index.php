@@ -12,8 +12,9 @@ include_once('inc/cadastros/cadTurma.php');
 
 
         <div class="d-flex flex-nowrap bd-highlight">
+        <!-- <div class="p-2 bd-highlight">Flex item</div> -->
             <div class="order-3 p-2 bd-highlight">
-                <a href="?logout=true" style="text-decoration: none;" class="btn btn-primary float-start m-2">Sair</a>
+                <a href="?logout=true" style="text-decoration: none;" class="btn btn-outline-primary float-start m-2">Sair</a>
             </div>
             <!-- <div class="order-3 p-2 bd-highlight">
             <a class="bt more-bt float-end" href="#modalCurso" data-bs-toggle="modal">

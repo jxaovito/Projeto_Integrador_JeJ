@@ -34,7 +34,13 @@ include_once('inc/cadastros/cadTurma.php');
                     <p>Cadastrar curso</p>
                 </a>
             </div>
+            <div class="d-flex justify-content-end">
+            <a href="?logout=true" style="text-decoration: none;" class="btn btn-outline-primary float-start m-2">Sair</a>
+        
+            </div>
+
         </div>
+        
 
 
 

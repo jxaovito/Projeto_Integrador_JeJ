@@ -26,7 +26,7 @@ if ($sql->execute()) {
                             <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 Selecione uma turma
                             </button>
-                            <ul class="dropdown-menu w-100 shadow-lg p-0 " aria-labelledby="dropdownMenu2">
+                            <ul class="dropdown-menu dropdown-menu-dark w-100 shadow-lg p-0 " aria-labelledby="dropdownMenu2">
                                 <li>
                                     <ul class="list-group">
                                         <?php

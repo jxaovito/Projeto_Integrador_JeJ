@@ -34,15 +34,15 @@ if (isset($_GET['cod_curso'])){
 
                 <div class="mb-3">
                     <label for="hIni" class="form-label mt-5">
-                        <h3>Horario de Inicio</h3>
+                        <h3 class="fonte">Horario de Inicio</h3>
                     </label>
                     <input type="time" name="hIni" id="hIni" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="hFim" class="form-label">
-                        <h3>Horario de Fim</h3>
+                    <label for="hFim" class="form-label ">
+                        <h3 class="fonte">Horario de Fim</h3>
                     </label>
-                    <input type="time" name="hFim" id="hFim" class="form-control">
+                    <input type="time " name="hFim" id="hFim" class="form-control ">
                 </div>
                 <div class="mb-3">
                     <select name="hCurso" class="form-select form-select mb-3 " hidden aria-label=".form-select-lg example">
@@ -68,7 +68,7 @@ if (isset($_GET['cod_curso'])){
                 </div>
                 <div class="mb-3">
                     <label for="hDisicplina" class="form-label">
-                        <h3>Selecione uma Disciplina</h3>
+                        <h3 class="fonte">Selecione uma Disciplina</h3>
                     </label>
                     <select name="hDisciplina" class="form-select form-select mb-3" aria-label=".form-select-lg example">
 
@@ -90,7 +90,7 @@ if (isset($_GET['cod_curso'])){
                 </div>
                 <div class="mb-3">
                     <label for="hProfessor" class="form-label">
-                        <h3>Selecione um Professor</h3>
+                        <h3 class="fonte">Selecione um Professor</h3>
                     </label>
                     <select name="hProfessor" class="form-select form-select mb-3" aria-label=".form-select-lg example">
                         <?php
@@ -133,7 +133,7 @@ if (isset($_GET['cod_curso'])){
                   
                     <div class="mb-3">
                         <label for="nomeData" class="form-label">
-                            <h3>Selecione um horário</h3>
+                            <h3 class="fonte">Selecione um horário</h3>
                         </label>
                         <input type="date" name="nomeData" id="nomeData" class="form-control" placeholder="Digite o nome do Curso:">
                     </div>

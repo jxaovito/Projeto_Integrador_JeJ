@@ -112,3 +112,7 @@ body {
 .textmenu {
     color: black;
 }
+
+.fonte {
+    font-family: 'Open Sans', sans-serif;
+}

@@ -8,7 +8,6 @@ include_once('inc/banco.php');
 
 <div class="container mt-3">
     <div class="row">
-        <h1> Selecione a sua turma </h1>
 
         <?php
         include_once('inc/cardCurso.php');

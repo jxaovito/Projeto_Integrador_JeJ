@@ -64,18 +64,7 @@ if (isset($_GET['cod_turma'])){
             </div>
            
             
-            <div class="accordion-item ">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class=" btn accordion-button accordion-button-active-color collapsed fundocinza" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        <h6 class="preto">Horario Aulas</h6>
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                     <ul class="list-group">
-                         <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="horario.php">Cadastre um Horario</a></li>
-                     </ul>
-                </div>
-            </div>
+   
         </div>
     </div>
     <li class="list-group-item fundo_menu"><a href="index.php" style="text-decoration: none;" class="branco">Início</a></li>

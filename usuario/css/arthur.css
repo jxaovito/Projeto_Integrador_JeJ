@@ -116,3 +116,15 @@ body {
 .fonte {
     font-family: 'Open Sans', sans-serif;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #183f79;
+    border-color: #14438a;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #13305c;
+    border-color: #14438a;
+}

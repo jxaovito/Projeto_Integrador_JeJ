@@ -23,7 +23,7 @@ include_once('inc/header.php');
                 include_once('inc/calendarios/calendario.php');
                 
                 ?>
-                <a class="btn btn-primary" href="index.php"> Voltar </a>
+
             </div>
         </div>
     </div>

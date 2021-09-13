@@ -16,9 +16,9 @@ if ($sql->execute()) {
 
                 <a onclick="return confirm('Deseja mesmo excluir o curso?');" class='btn btn-outline-danger' href='inc/deletar/delCurso.php?id=<?php echo $cursoCod?>' >Excluir</a>
 
-                <img src="img/cursinho.jpg" class="card-img-top float-start">
+                <img src="img/cursao.jpg" class="card-img-top float-start">
 
-                <div class="card-body">
+                <div class="card-body shadow">
 
                     <h5 class="card-title"> <?php echo $cursoNome ?></h5>
 

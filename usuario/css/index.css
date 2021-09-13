@@ -5,3 +5,8 @@ font-weight: bold;
 h6{
 margin:0px;
 }
+@media screen and (max-width: 600px) {
+    .col-md-3{
+        justify-content: center;
+    }
+  }

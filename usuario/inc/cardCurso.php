@@ -9,7 +9,7 @@ if ($sql->execute()) {
 
 ?>
 
-        <div class="col col-3 mt-3" >
+        <div class="col col-md-3 mt-3" >
             <div class="card m-2" style="width: 18rem">
 
 

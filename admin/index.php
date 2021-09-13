@@ -33,21 +33,23 @@ include_once('inc/cadastros/cadTurma.php');
 
 
 
-        <?php
-        include_once('inc/principal/cards/cardCurso.php');
-        ?>
+
+
+                <?php
+                include_once('inc/principal/cards/cardCurso.php');
+                ?>
 
 
 
-        <?php
-        include_once('inc/principal/modal/modalCurso.php');
+                <?php
+                include_once('inc/principal/modal/modalCurso.php');
 
-        include_once('inc/principal/modal/modalTurma.php');
-        ?>
+                include_once('inc/principal/modal/modalTurma.php');
+                ?>
 
-    </div>
-</div>
-<!-- <script>
+            </div>
+        </div>
+        <!-- <script>
     function myFunction(valor) {
         var resultadoEspaco = valor.split("|", 2);
         cod_curso = resultadoEspaco[0];
@@ -58,4 +60,4 @@ include_once('inc/cadastros/cadTurma.php');
 </script> -->
 
 
-<?php include_once('inc/footer.php'); ?>
+        <?php include_once('inc/footer.php'); ?>

@@ -42,7 +42,7 @@ if (isset($_GET['cod_curso'])){
                     <label for="hFim" class="form-label ">
                         <h3 class="fonte">Horario de Fim</h3>
                     </label>
-                    <input type="time " name="hFim" id="hFim" class="form-control ">
+                    <input type="time" name="hFim" id="hFim" class="form-control ">
                 </div>
                 <div class="mb-3">
                     <select name="hCurso" class="form-select form-select mb-3 " hidden aria-label=".form-select-lg example">

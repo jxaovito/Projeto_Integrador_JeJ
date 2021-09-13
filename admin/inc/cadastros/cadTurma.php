@@ -10,9 +10,9 @@ if (isset($_POST['cturma'])&& $_POST['randcheck']== $_SESSION['rand']) {
         $sql = $pdo -> prepare("INSERT INTO turma (cod_turma,nome,cod_curso) values (null,?,?)");
 
         if($sql -> execute(array($nomeTurma,$nomeCurso))){
-            echo 'Dados cadastrados com sucesso.';
+            
         } else {
-            echo 'Dados não cadastrados';
+            
         }     
             }
 

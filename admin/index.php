@@ -22,7 +22,11 @@ include_once('inc/cadastros/cadTurma.php');
                             <span class="fl"></span><span class="sfl"></span><span class="cross"></span><i></i>
                             <p>Cadastrar curso</p>
                         </a></div>
-                    <div class="ms-auto p-2 bd-highlight  "> <a href="?logout=true" style="text-decoration: none;" class="float-start cor border shadow "><button class="1 btn-sair fourth float-end ">Sair</button></a></div>
+                    <div class="ms-auto p-2 bd-highlight  ">
+                        <a href="?logout=true" style="text-decoration: none;" class="float-start cor border shadow ">
+                        <button class="1 btn-sair fourth float-end ">Sair</button>
+                        </a>
+                    </div>
                 </div>
 
 

@@ -10,22 +10,17 @@ include_once('inc/cadastros/cadTurma.php');
 <div class="container">
     <div class="row">
 
-
+<!-- BOTÃO DE DESLOGAR PARA O ADMIN-->
         <div class="d-flex flex-nowrap bd-highlight">
-        <!-- <div class="p-2 bd-highlight">Flex item</div> -->
             <div class="order-3 p-2 bd-highlight">
                 <a href="?logout=true" style="text-decoration: none;" class="btn btn-outline-primary float-start m-2">Sair</a>
             </div>
-            <!-- <div class="order-3 p-2 bd-highlight">
-            <a class="bt more-bt float-end" href="#modalCurso" data-bs-toggle="modal">
-                    <span class="fl"></span><span class="sfl"></span><span class="cross"></span><i></i>
-                    <p>Sair</p>
-                </a>
-            </div> -->
+ 
+            <!-- BOTÕES DE CADASTRO DA TURMA E CURSO -->
             <div class="order-2 p-2 bd-highlight">
                 <a class="bt more-bt float-end" href="#modalTurma" data-bs-toggle="modal">
                     <span class="fl"></span><span class="sfl"></span><span class="cross"></span><i></i>
-                    <p>Cadastro Turma</p>
+                    <p>Cadastrar Turma</p>
                 </a>
             </div>
             <div class="order-1 p-2 bd-highlight">

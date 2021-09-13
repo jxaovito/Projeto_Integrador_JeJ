@@ -2,6 +2,7 @@
 
 include_once(dirname(__FILE__). "/../banco.php");
 
+// PUXA CODIGO DA TURMA E CURSO
 if (isset($_GET['cod_turma'])){
     $codTurma = $_GET['cod_turma'];
  } else {
@@ -14,6 +15,7 @@ if (isset($_GET['cod_turma'])){
      $codCurso = "";
   }
 
+//   DELETAR PROFESSORES NA LISTA
     if(isset($_GET ['id'])){
         $cod_professor = $_GET['id'];
 

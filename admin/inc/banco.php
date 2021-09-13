@@ -1,5 +1,6 @@
 <?php
 
+    // CONEXÃO AO BANCO DE DADOS
     define('DATABASE_HOST','10.10.134.153:3308');
     define('DATABASE_NAME','cronograma');
     define('DATABASE_USER','jej');

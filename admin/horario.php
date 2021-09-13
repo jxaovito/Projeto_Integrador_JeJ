@@ -31,7 +31,7 @@ if (isset($_GET['cod_curso'])){
                 ?>
 
 
-
+            <!-- MOSTRA O CAMPO DE ESCOLHER HORÁRIO DE INÍCIO E FIM DAS AULAS NO CALENDÁRIO -->
                 <div class="mb-3">
                     <label for="hIni" class="form-label mt-5">
                         <h3 class="fonte">Horario de Inicio</h3>
@@ -64,8 +64,8 @@ if (isset($_GET['cod_curso'])){
                         }
                         ?>
                     </select>
-
                 </div>
+                       <!-- MOSTRA O CAMPO DE SELECIONAR A DISCIPLINA PARA A AULA -->
                 <div class="mb-3">
                     <label for="hDisicplina" class="form-label">
                         <h3 class="fonte">Selecione uma Disciplina</h3>
@@ -88,6 +88,8 @@ if (isset($_GET['cod_curso'])){
                         ?>
                     </select>
                 </div>
+
+                <!-- SELECT DOS PROFESSORES -->
                 <div class="mb-3">
                     <label for="hProfessor" class="form-label">
                         <h3 class="fonte">Selecione um Professor</h3>
@@ -128,12 +130,12 @@ if (isset($_GET['cod_curso'])){
                         ?>
                     </select>
                 </div>
-                <div class="mb-3">
 
-                  
+                <!-- CAMPO PARA ESCOLHER A DATA DA AULA -->
+                <div class="mb-3">
                     <div class="mb-3">
                         <label for="nomeData" class="form-label">
-                            <h3 class="fonte">Selecione um horário</h3>
+                            <h3 class="fonte">Selecione uma data</h3>
                         </label>
                         <input type="date" name="nomeData" id="nomeData" class="form-control" placeholder="Digite o nome do Curso:">
                     </div>

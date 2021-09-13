@@ -11,6 +11,8 @@ if (isset($_GET['cod_turma'])){
      $codCurso = "";
   }
 ?>
+
+<!-- ABA DO TOPO NO CALENDARIO DO ADMINISTRADOR -->
 <div style="padding: 3px;" class="d-flex align-items-center mb-3 shadow fundo_menu">
     <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
         <img  class="img-fluid " src="img/menularanja.png" alt="">
@@ -18,6 +20,7 @@ if (isset($_GET['cod_turma'])){
     <h5 class="px-4" style="color: #eeeeee; margin:0px;">Cronograma</h5>
 </div>
 
+<!-- ABA DE MENU À ESQUERDA DO CALENDARIO -->
 <div class="offcanvas offcanvas-start cinza" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header fundo_menu shadow">
         <h5 class="offcanvas-title branco"id="offcanvasExampleLabel">Menu do Sistema</h5>
@@ -27,6 +30,8 @@ if (isset($_GET['cod_turma'])){
         <div class="pb-3 px-3 branco">
             
         </div>
+
+        <!-- ABRIR LISTA DENTRO DO MENU COM OS CADASTROS -->
         <div class="accordion accordion-flush shadow" id="accordionFlushExample" ">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
@@ -34,27 +39,14 @@ if (isset($_GET['cod_turma'])){
                         <h6 class="preto">Cadastros</h6>
                     </button>
                 </h2>
-                <!-- <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body p-0">
-                    <ul class="list-group">
-                            <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="curso.php">Cadastre um Curso </a></li>
-                            <li class="btn"><a style="text-decoration : none;" class=" d-grid gap-2" href="disciplina.php">Cadastre uma Disciplina</a></li>
-                            <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="prof.php">Cadastre um Professor</a></li>
-                            <li class="btn"><a style="text-decoration: none;" class=" d-grid gap-2" href="turma.php">Cadastre uma Turma</a></li>
-                            <li class="btn"><a style="text-decoration: none;" class=" " href="horario.php">Cadastre um Horário</a></li>
-                        </ul>
-                    </div>
-                </div> -->
+ 
+                <!-- LISTA COM AS PÁGINAS DE CADASTROS -->
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body p-0">
                         <ul class="list-group">
-                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="curso.php">Cadastre um Curso </a></li> -->
-                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php">Cadastre uma Disciplina</a></li>
-                            <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php">Cadastre um Professor</a></li>  -->
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="disciplina.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre uma Disciplina</a></li>
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="prof.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cadastre um Professor</a></li>
                             <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="cronograma.php?cod_curso=<?php echo $codCurso?>&cod_turma=<?php echo $codTurma ?>">Cronograma</a></li>
-                            <!-- <li class="btn list-group-item fundocinza"><a style="text-decoration: none;" class="preto" href="horario.php">Cadastre um Horário</a></li> -->
                         </ul>
 
 
@@ -67,6 +59,7 @@ if (isset($_GET['cod_turma'])){
             
         </div>
     </div>
+    <!-- BOTÕES DE VOLTAR AO INICIO E SAIR -->
     <li class="list-group-item fundo_menu"><a href="index.php" style="text-decoration: none;" class="branco">Início</a></li>
     <li class="list-group-item fundo_menu"><a href="?logout=true" style="text-decoration: none;" class="branco">Sair</a></li>
     </form>

@@ -12,6 +12,8 @@ include_once("inc/cadastros/cadTurma.php");
                 //$rand = rand();
                 $_SESSION['rand'] = $rand;
                 ?>
+
+                <!-- CADASTRO DA TURMA NO BOTÃO DA PÁGINA INICIAL -->
                 <div class="mb-3">
                     <label for="nomeTurma" class="form-label">
                         <h2>Cadastro Turma:</h2>
@@ -20,6 +22,7 @@ include_once("inc/cadastros/cadTurma.php");
                         <h3>Selecione um Curso</h3>
                     </label>
 
+                    <!-- SELECT DOS CURSOS -->
                     <select name="hCurso" class="form-select form-select mb-3" aria-label=".form-select-lg example">
                     <?php
                     $sql = $pdo->prepare('SELECT * FROM curso');
@@ -40,11 +43,14 @@ include_once("inc/cadastros/cadTurma.php");
                     </select>
                     <input type="text" name="nomeTurma" id="nomeTurma" required class="form-control" placeholder="Digite o nome da Turma:">
                 </div>
+
+                <!-- BOTÃO DE CADASTRAR -->
                 <input type="hidden" value="<?php echo $rand; ?>" name="randcheck" />
                 <input type="submit" name="cturma" value="Cadastrar" class="btn btn-primary">
 
             </form>
         </div>
+        <!-- EXIBE A LISTA DAS TURMAS -->
         <div class="col col-10">
             <h2>Lista das turmas:</h2>
             <?php

@@ -18,7 +18,7 @@ if ($sql->execute()) {
 
                 <img src="img/cursao.jpg" class="card-img-top float-start">
 
-                <div class="card-body">
+                <div class="card-body shadow">
 
                     <h5 class="card-title"> <?php echo $cursoNome ?></h5>
 

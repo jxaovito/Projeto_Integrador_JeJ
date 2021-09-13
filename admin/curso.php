@@ -13,6 +13,7 @@ include_once("inc/cadastros/cadCurso.php");
                 $_SESSION['rand'] = $rand;
                 ?>
 
+                <!-- INPUT QUE CADASTRA O CURSO PARA INSERIR NO CALENDARIO POSTERIORMENTE -->
                 <div class="mb-3">
                     <label for="nomeCurso" class="form-label">
                         <h2>Cadastro Curso</h2>
@@ -25,6 +26,8 @@ include_once("inc/cadastros/cadCurso.php");
 
             </form>
         </div>
+
+        <!-- EXIBE A LISTA DOS CURSOS -->
         <div class="col col-10">
             <h2>Lista dos Cursos:</h2>
             <?php

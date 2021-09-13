@@ -1,5 +1,6 @@
 <?php
 
+// FORMAÇÃO DO CALENDÁRIO --------------------------------
 
 class Calendar {
     private $active_year, $active_month, $active_day;
@@ -11,6 +12,7 @@ class Calendar {
         $this->active_day = $date != null ? date('d', strtotime($date)) : date('d');
     }
 
+    // FUNÇÃO DE ADIÇÃO DE AULAS
     public function add_event($txt, $date, $days = 1, $color = '') {
         $color = $color ? ' ' . $color : $color;
         $this->events[] = [$txt, $date, $days, $color];

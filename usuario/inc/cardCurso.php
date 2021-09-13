@@ -8,17 +8,18 @@ if ($sql->execute()) {
         $cursoCod = $values['cod_curso'];
 
 ?>
-
-        <div class="col col-md-3 mt-3" >
+<!-- CARDS DOS CURSOS -->
+        <div class="col col-3 mt-3" >
             <div class="card m-2" style="width: 18rem">
 
-
+                
                 <img src="img/cursao.jpg" class="card-img-top float-start">
 
                 <div class="card-body shadow">
 
                     <h5 class="card-title"> <?php echo $cursoNome ?></h5>
 
+                    <!-- SELECT COM AS LISTAS DAS TURMAS DENTRO DOS CARDS -->
                     <div class="dropdown my-2">
                         <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                             Selecione uma turma

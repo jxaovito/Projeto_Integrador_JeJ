@@ -4,7 +4,8 @@ include_once(dirname(__FILE__). "/../banco.php");
 
     if(isset($_GET ['id'])){
         $cod_curso = $_GET['id'];
-
+        
+        
         $sql = $pdo->prepare("DELETE FROM curso WHERE cod_curso =?");
         if($sql->execute(array($cod_curso))){
             if($sql->rowCount() > 0){
@@ -19,6 +20,7 @@ include_once(dirname(__FILE__). "/../banco.php");
     
     }
     
+
     if(isset($_GET ['id'])){
         $cod_curso = $_GET['id'];
     $sql = $pdo->prepare("SELECT * FROM turma WHERE cod_curso =?");

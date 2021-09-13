@@ -1,4 +1,5 @@
 <?php
+    // VERIFICA SE O LOGIN FOI EXECUTADO CORRETAMENTE
     @session_start();
     $logado = isset($_SESSION ['is_logged']) ? $_SESSION['is_logged'] : false;
 

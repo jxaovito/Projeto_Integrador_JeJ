@@ -1,6 +1,14 @@
 body{
-    background: rgb(211,218,217);
-background: linear-gradient(90deg, rgba(211,218,217,1) 7%, rgba(235,250,251,1) 85%);
+    background: rgb(238, 238, 238);
+/* background: linear-gradient(90deg, rgba(211,218,217,1) 7%, rgba(235,250,251,1) 85%); */
+
+}
+.corindexfundo{
+    background-color:rgb(234, 248, 246) ;
+}
+
+.font{
+    font-weight: 700;
 }
 
 .mycontainer{
@@ -48,3 +56,4 @@ a:hover{
 .accordion-button-active-color{
     background-color: rgb(253, 193, 114);
 }
+

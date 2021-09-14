@@ -57,6 +57,10 @@ a:hover{
     background-color: rgb(253, 193, 114);
 }
 
+.dropdown-item:hover{
+    background-color: #e9ecef !important;
+}
+
 @media (max-width:768px){
     .day_num:nth-child(1n) {
         flex-basis: 100%;

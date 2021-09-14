@@ -23,7 +23,7 @@ if ($sql->execute()) {
         if ($i % 2 == 0) {
             $class =  "bg-light";
         } else {
-            $class =  "";
+            $class =  "yehd";
         }
         $codProf = $values['cod_professor'];
 

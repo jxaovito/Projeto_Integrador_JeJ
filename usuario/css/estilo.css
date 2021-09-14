@@ -56,3 +56,14 @@ a:hover{
     background-color: rgb(253, 193, 114);
 }
 
+@media (max-width:768px){
+    .day_num:nth-child(1n) {
+        flex-basis: 100%;
+    }
+    .day_name{
+        display: none;
+    }
+    .calendar .days .day_num.ignore{
+        display: none;
+    }
+}

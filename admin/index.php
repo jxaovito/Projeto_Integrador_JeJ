@@ -49,6 +49,6 @@ include_once('inc/cadastros/cadTurma.php');
                 ?>
  
             </div>
-        </div>>
+        </div>
  
         <?php include_once('inc/footer.php'); ?>

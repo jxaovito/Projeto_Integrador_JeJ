@@ -142,7 +142,7 @@ if (isset($_GET['cod_curso'])){
                 </div>
 
                 <input type="hidden" value="<?php echo $rand; ?>" name="randcheck" />
-                <input type="submit" name="chorario" value="Cadastrar" class="btn btn-primary">
+                <input type="submit" name="chorario" value="Cadastrar" class="btn btn-warning">
                 <a class="btn btn-primary" href="index.php"> Voltar </a>
 
             </form>

@@ -10,7 +10,7 @@ include_once('dataCalendario.php');
 
 	<!-- SELECT DA LISTA DOS MESES NO CALENDÁRIO DO USUÁRIO -->
 	<div class="dropdown my-2">
-		<button class="btn btn-outline-secondary dropdown-toggle " type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+		<button class="btn btn-outline-dark dropdown-toggle " type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
 			Selecione um mês
 		</button>
 		<ul class="dropdown-menu shadow-lg p-0 " aria-labelledby="dropdownMenu2">

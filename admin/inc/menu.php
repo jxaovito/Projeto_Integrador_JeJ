@@ -60,7 +60,7 @@ if (isset($_GET['cod_turma'])){
         </div>
     </div>
     <!-- BOTÕES DE VOLTAR AO INICIO E SAIR -->
-    <li class="list-group-item fundo_menu"><a href="index.php" style="text-decoration: none;" class="branco">Início</a></li>
-    <li class="list-group-item fundo_menu"><a href="?logout=true" style="text-decoration: none;" class="branco">Sair</a></li>
+    <li class="list-group-item fundo_menu"><a href="index.php" style="text-decoration: none;" class="branco ">Início</a></li>
+    <li class="list-group-item fundo_menu  " ><a href="?logout=true" style="text-decoration: none;" class="branco">Sair</a></li>
     </form>
 </div>

@@ -5,6 +5,7 @@
 
     if(isset($_GET['logout'])){
         session_destroy();
+        header("location:login.php");
     }
     if(!$logado && !isset($is_login)){
         header("location:login.php");

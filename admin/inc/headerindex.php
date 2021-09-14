@@ -24,5 +24,5 @@ $rand = rand();
     <link rel="stylesheet" href="css/botao.css">
 </head>
 
-<body>
+<body class="corindexfundo">
     

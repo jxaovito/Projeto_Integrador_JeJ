@@ -54,5 +54,5 @@
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color:transparent;
+    background-color:transparent !important;
 }

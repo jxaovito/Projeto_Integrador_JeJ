@@ -22,9 +22,9 @@ if (isset($_POST['chorario']) && $_POST['randcheck']== $_SESSION['rand']) {
         $sql = $pdo -> prepare("INSERT INTO calendario (cod_calendario,horario_ini,horario_fim, cod_curso, cod_disciplina, cod_professor, cod_turma ,dia) values (null,?,?,?,?,?,?,?)");
 
         if($sql -> execute(array($horario_ini,$horario_fim,$curso,$disciplina,$professor,$turma,$data))){
-            echo 'Dados cadastrados com sucesso.';
+            
         } else {
-            echo 'Dados não cadastrados';
+            
         }     
             }
 

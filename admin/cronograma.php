@@ -22,7 +22,7 @@ include_once('inc/header.php');
                     include_once('horario.php');
                 ?>
             </div>
-            <div class="col col-9">
+            <div class="col row-cols-md-9">
                 <?php
                 include_once('inc/calendarios/calendario.php');
                 

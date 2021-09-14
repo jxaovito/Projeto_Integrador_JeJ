@@ -415,3 +415,7 @@ body {
     -webkit-transition-duration: .6s;
     transition-duration: .6s;
 }
+.dropdown-item:active {
+    color: #fff;
+    background-color: transparent !important;
+}

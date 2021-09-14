@@ -22,7 +22,7 @@ include_once('inc/cadastros/cadTurma.php');
 
                         <!-- BOTÃO DE DESLOGAR PARA O ADMIN -->
                     <div class="ms-auto p-2 bd-highlight  ">
-                        <a href="?logout=true" style="text-decoration: none;" class="float-start cor border shadow ">
+                        <a href="?logout=true" style="text-decoration: none;" class="float-start cor border  ">
                         <button class="1 btn-sair fourth float-end ">Sair</button>
                         </a>
                     </div>

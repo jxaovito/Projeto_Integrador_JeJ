@@ -22,9 +22,7 @@ if (isset($_GET['cod_curso'])){
 <div class="container-fluid">
     <div class="row">
         <div class="col col-11">
-            <form action="" method="post" class="mt-5">
-
-
+            <form action="" method="post">
                 <?php
                 // $rand = rand();
                 $_SESSION['rand'] = $rand;

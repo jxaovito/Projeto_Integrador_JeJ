@@ -22,9 +22,9 @@
         $i = 0;
         foreach($info as $key=> $values){
             if ($i % 2 == 0) {
-                $class =  "bg-light";
+                $class =  "bg-white";
             } else {
-                $class =  "";
+                $class =  "cinza";
             }
 
             // DA VALOR ÀS VARIÁVEIS PUXADAS DO BANCO

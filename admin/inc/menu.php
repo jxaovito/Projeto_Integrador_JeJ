@@ -51,12 +51,12 @@ if (isset($_GET['cod_curso'])) {
                         </li>
                         <li class="btn list-group-item fundocinza">
                             <a style="text-decoration: none;" class="preto" href="prof.php?cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">
-                            <div class="fundoacordeao">Cadastre um Professor</div>
+                                <div class="fundoacordeao">Cadastre um Professor</div>
                             </a>
                         </li>
                         <li class="btn list-group-item fundocinza">
                             <a style="text-decoration: none;" class="preto" href="cronograma.php?cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">
-                            <div class="fundoacordeao">Cronograma</div>
+                                <div class="fundoacordeao">Cronograma</div>
                             </a>
                         </li>
                     </ul>
@@ -72,7 +72,15 @@ if (isset($_GET['cod_curso'])) {
     </div>
 </div>
 <!-- BOTÕES DE VOLTAR AO INICIO E SAIR -->
-<li class="list-group-item fundo_menu"><a href="index.php" style="text-decoration: none;" class="branco btn">Início</a></li>
-<li class="list-group-item fundo_menu  "><a href="?logout=true" style="text-decoration: none;" class="branco btn btn-azul">Sair</a></li>
+<li class="list-group-item fundo_menu">
+    <a href="index.php" style="text-decoration: none;" class="branco fundocordeao">
+       <div>Início</div>
+    </a>
+</li>
+<li class="list-group-item fundo_menu  ">
+    <a href="?logout=true" style="text-decoration: none;" class="branco ">
+   <div> Sair </div>
+</a>
+</li>
 </form>
 </div>

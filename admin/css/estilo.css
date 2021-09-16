@@ -33,10 +33,21 @@ background: linear-gradient(90deg, rgba(219,241,247,1) 1%, rgba(241,252,255,1) 9
 .branco{
     color: rgb(255, 255, 255);
 }
+.branco:hover{
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+}
 
 a:hover{
-    color:whitesmoke;
+    color:#1A3E70;
 }
+.fundoacordeao:hover{
+    background-color: rgb(235, 240, 241);
+}
+.fundoacordeao2:hover{
+    background-color: rgb(55, 56, 56);
+}
+
 .margin0{
     margin: 0px !important;
 }

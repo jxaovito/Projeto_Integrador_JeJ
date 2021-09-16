@@ -54,9 +54,9 @@ if ($sql->execute()) {
 		$codcalendario = $values['cod_calendario'];
 		$dataFormatadaIni = date('H:i', strtotime($values['horario_ini']));
 		$dataFormatadaFim = date('H:i', strtotime($values['horario_fim']));
-		$curso = $values['nomecurso'];
-		$disciplina = $values['nomedisciplina'];
-		$professor = $values['nomeprofessor'];
+		$curso = ucfirst($values['nomecurso']);
+		$disciplina = ucfirst($values['nomedisciplina']);
+		$professor = ucwords($values['nomeprofessor']);
 		$turma = $values['nometurma'];
 		$data = $values['dia'];
 		$cor = $values['disciplinaCor'];

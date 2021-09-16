@@ -128,4 +128,7 @@ body {
     background-color: #13305c;
     border-color: #14438a;
 }
-
+.btn-azul:hover {
+    color: #fff;
+    background-color: #d63b0b;
+}

@@ -33,6 +33,24 @@ if (isset($_GET['cod_turma'])){
             echo 'Erro ao excluir alunos!!';
         }
     }
+    if(isset($_GET ['id'])){
+        $cod_feriado = $_GET['id'];
+
+        $sql = $pdo->prepare("DELETE FROM feriado WHERE cod_feriado =?");
+        if($sql->execute(array($cod_feriado))){
+            if($sql->rowCount() > 0){
+                echo 'Aluno excluído com sucesso!!';
+                // VOLTA À PAGINA DO CALENDARIO
+                header("location:../../../admin/cronograma.php?cod_curso=".$codCurso."&cod_turma=".$codTurma);
+            } else{
+                echo 'Código não localizado<br>';
+            }
+
+        } else {
+            echo 'Erro ao excluir alunos!!';
+        }
+    }
+
 
 
 ?>

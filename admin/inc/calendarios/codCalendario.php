@@ -17,6 +17,10 @@ class Calendar {
         $color = $color ? ' ' . $color : $color;
         $this->events[] = [$txt, $date, $days, $color];
     }
+    public function add_event2($txt, $date, $days = 1, $color = '') {
+        $color = $color ? ' ' . $color : $color;
+        $this->events[] = [$txt, $date, $days, $color];
+    }
 
     public function __toString() {
         setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');

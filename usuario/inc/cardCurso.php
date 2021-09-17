@@ -4,12 +4,12 @@ if ($sql->execute()) {
     $info = $sql->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($info as $key => $values) {
-        $cursoNome = $values['nome'];
+        $cursoNome = ucfirst($values['nome']);
         $cursoCod = $values['cod_curso'];
 
 ?>
 <!-- CARDS DOS CURSOS -->
-        <div class="col col-3 mt-3" >
+        <div class=" col col-lg-3" >
             <div class="card m-2" style="width: 18rem">
 
                 

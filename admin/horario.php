@@ -140,9 +140,16 @@ if (isset($_GET['cod_curso'])){
                 </div>
 
                 <input type="hidden" value="<?php echo $rand; ?>" name="randcheck" />
-                <input type="submit" name="chorario" value="Cadastrar" class="btn btn-primary">
+                <input type="submit" name="chorario" value="Cadastrar" class="btn btn-warning">
                 <a class="btn btn-primary" href="index.php"> Voltar </a>
+                
 
+                <h3 class="fonte mt-5">Cadastre um feriado:</h3>
+                <div class="d-flex mt-3">
+                <input type="date" name="nomeFeriado" id="nomeFeriado" class="form-control" >
+                <input type="submit" name="cferiado" value="Feriado" class="btn btn-warning">
+                </div>
+                  
             </form>
         </div>
     </div>

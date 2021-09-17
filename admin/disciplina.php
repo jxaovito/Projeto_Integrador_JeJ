@@ -39,7 +39,7 @@ include_once("inc/cadastros/cadDisciplina.php");
                 </div>
                 <input type="hidden" value="<?php echo $rand; ?>" name="randcheck" />
                 <!-- BOTÕES DE CADASTRAR DISCIPLINA E VOLTAR PARA A PÁGINA ANTERIOR -->
-                <input type="submit" name="cdisciplina" value="Cadastrar" class="btn btn-primary">
+                <input type="submit" name="cdisciplina" value="Cadastrar" class="btn btn-warning">
                 <?php echo "<a class='btn btn-primary' href='cronograma.php?cod_curso=$codCurso&cod_turma=$codTurma'> Voltar </a>";?>
 
             </form>

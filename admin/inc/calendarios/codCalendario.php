@@ -17,6 +17,10 @@ class Calendar {
         $color = $color ? ' ' . $color : $color;
         $this->events[] = [$txt, $date, $days, $color];
     }
+    public function add_event2($txt, $date, $days = 1, $color = '') {
+        $color = $color ? ' ' . $color : $color;
+        $this->events[] = [$txt, $date, $days, $color];
+    }
 
     public function __toString() {
         setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
@@ -64,6 +68,7 @@ class Calendar {
             }
             $html .= '<div class="day_num' . $selected . '">';
             $html .= '<span>' . $i . '</span>';
+            
             foreach ($this->events as $event) {
                 for ($d = 0; $d <= ($event[2]-1); $d++) {
                     if (date('y-m-d', strtotime($this->active_year . '-' . $this->active_month . '-' . $i . ' -' . $d . ' day')) == date('y-m-d', strtotime($event[1]))) {

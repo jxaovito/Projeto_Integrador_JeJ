@@ -1,8 +1,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <?php
-include_once("inc/banco.php");
-include_once('inc/calendarios/codCalendario.php');
+include_once(dirname(__FILE__) . "/../banco.php");;
+include 'codCalendario.php';
 $week = 3;
 $year = 2021;
 
@@ -22,53 +22,72 @@ if (isset($_GET['meses'])) {
 }
 
 // PUXAR TURMA E CURSO PELO CODIGO
-if (isset($_GET['cod_turma'])){
+if (isset($_GET['cod_turma'])) {
 	$codTurma = $_GET['cod_turma'];
- } else {
+} else {
 	$codTurma = "";
- }
- 
- if (isset($_GET['cod_curso'])){
-	 $codCurso = $_GET['cod_curso'];
-  } else {
-	 $codCurso = "";
-  }
+}
+
+if (isset($_GET['cod_curso'])) {
+	$codCurso = $_GET['cod_curso'];
+} else {
+	$codCurso = "";
+}
 
 
 
 $calendar = new Calendar(date($mydate));
 
 // PUXA AS INFORMAÇÕES QUE ESTÃO NO BANCO DE DADOS NECESSÁRIAS PARA A CRIAÇÃO DAS AULAS 
-$sql = $pdo->prepare('SELECT calendario.cod_calendario, calendario.horario_ini, calendario.horario_fim , curso.nome as nomecurso, disciplina.nome as nomedisciplina, disciplina.cor as disciplinaCor, professor.nome as nomeprofessor, turma.nome as nometurma, calendario.dia FROM calendario
+$sql = $pdo->prepare(
+	'SELECT calendario.cod_calendario, calendario.horario_ini, calendario.horario_fim , curso.nome as nomecurso, disciplina.nome as nomedisciplina, disciplina.cor as disciplinaCor, professor.nome as nomeprofessor, turma.nome as nometurma, calendario.dia FROM calendario
                                                                             left join curso on calendario.cod_curso = curso.cod_curso
                                                                             left join disciplina on calendario.cod_disciplina = disciplina.cod_disciplina 
                                                                             left join professor on calendario.cod_professor = professor.cod_professor 
                                                                             left join turma on calendario.cod_turma = turma.cod_turma 
-																			where calendario.cod_turma ='.$codTurma.' AND calendario.cod_curso='.$codCurso
-																			);
+																			where calendario.cod_turma =' . $codTurma . ' AND calendario.cod_curso=' . $codCurso
+);
 if ($sql->execute()) {
 	$info = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 	foreach ($info as $key => $values) {
+
 		// VALORES DAS VARIAVEIS CALENDARIO
 		$codcalendario = $values['cod_calendario'];
 		$dataFormatadaIni = date('H:i', strtotime($values['horario_ini']));
 		$dataFormatadaFim = date('H:i', strtotime($values['horario_fim']));
-		$curso = $values['nomecurso'];
-		$disciplina = $values['nomedisciplina'];
-		$professor = $values['nomeprofessor'];
+		$curso = ucfirst($values['nomecurso']);
+		$disciplina = ucfirst($values['nomedisciplina']);
+		$professor = ucwords($values['nomeprofessor']);
 		$turma = $values['nometurma'];
 		$data = $values['dia'];
 		$cor = $values['disciplinaCor'];
-        
-     
-	
-		// ADICIONAR AULA -----------------------------
-			$calendar->add_event("$dataFormatadaIni-$dataFormatadaFim   <br>$disciplina<br>$professor<br>", "$data", 1, "$cor");
+		$deletar = "<a href='../admin/inc/deletar/delHorario.php?id=" . $values['cod_calendario'] . "&cod_curso=" . $codCurso . "&cod_turma=" . $codTurma . " 'style='color:white; text-decoration: none;' > x </a>";
+		$espaco = '&emsp;&emsp;&emsp;&emsp;&ensp;';
+
+		
 
 
 
+
+		// ADICIONAR AULAS ----------------------------
+		$calendar->add_event("$dataFormatadaIni-$dataFormatadaFim $espaco  <br>$disciplina<br>$professor<br>", "$data", 1, "$cor");
+		
+	}
+}
+$sql = $pdo->prepare('SELECT cod_feriado, data_feriado as dataFeriado FROM feriado');
+if ($sql->execute()) {
+	$info = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+	foreach ($info as $key => $values) {
+		$dataferiado = $values['dataFeriado'];
+		$espacoFeriado = '&emsp;&emsp;&emsp;';
+		$espacoDeletarFeriado = '&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;';
+		$textoFeriado = "<e style='color: black;'> Feriado </e>" ;
+		$deletarFeriado = "<a href='../admin/inc/deletar/delHorario.php?id=" . $values['cod_feriado'] . "&cod_curso=" . $codCurso . "&cod_turma=" . $codTurma . " 'style='color:white; text-decoration: none;' > x </a>";
+		
+
+		$calendar->add_event2("  </br> $espacoFeriado  $textoFeriado </br> </br>", "$dataferiado", 1, "feriado");
 	}
 }
 ?>
-

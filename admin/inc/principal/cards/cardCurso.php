@@ -6,7 +6,7 @@ if ($sql->execute()) {
     $info = $sql->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($info as $key => $values) {
-        $cursoNome = $values['nome'];
+        $cursoNome = ucfirst($values['nome']);
         $cursoCod = $values['cod_curso'];
 
 ?>
@@ -42,7 +42,7 @@ if ($sql->execute()) {
                                                 <li class="list-group-item bg-white p-3">
                                                     <ul class="d-flex p-0 m-0 " style="list-style: none;">
                                                         <li class="flex-fill">
-                                                            <a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?cod_curso=<?php echo $cursoCod ?>&cod_turma=<?php echo $values['cod_turma'] ?>"><?php echo $turmaNome ?></a>
+                                                            <a class="dropdown-item" style="color:black" href="cronograma.php?cod_curso=<?php echo $cursoCod ?>&cod_turma=<?php echo $values['cod_turma'] ?>"><?php echo $turmaNome ?></a>
                                                         </li>
 
                                                         <!-- BOTÃO DE EXCLUIR DENTRO DA LISTA  -->

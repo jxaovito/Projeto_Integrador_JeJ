@@ -143,12 +143,10 @@ if (isset($_GET['cod_curso'])){
                 <input type="submit" name="chorario" value="Cadastrar" class="btn btn-warning">
                 <a class="btn btn-primary" href="index.php"> Voltar </a>
                 
-                </br>
-                </br>
-                <input type="submit" name="cferiado" value="Feriado" class="btn btn-warning">
-               
-                       
+                <div class="d-flex mt-5">
                 <input type="date" name="nomeFeriado" id="nomeFeriado" class="form-control" >
+                <input type="submit" name="cferiado" value="Feriado" class="btn btn-warning">
+                </div>
                   
             </form>
         </div>

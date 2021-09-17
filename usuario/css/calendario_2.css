@@ -101,3 +101,9 @@
     font-size: 60% !important;
   }
 }
+.calendar .days .day_num .event.feriado {
+  background-color: #42F5A1;
+}
+.corFeriado{
+  color: red;
+}

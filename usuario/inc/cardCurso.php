@@ -4,7 +4,7 @@ if ($sql->execute()) {
     $info = $sql->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($info as $key => $values) {
-        $cursoNome = $values['nome'];
+        $cursoNome = ucfirst($values['nome']);
         $cursoCod = $values['cod_curso'];
 
 ?>

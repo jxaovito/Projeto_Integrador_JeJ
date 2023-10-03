@@ -27,7 +27,7 @@ if (isset($_POST['entrar'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql = $pdo->prepare('SELECT * FROM alunos WHERE email = ? AND senha = ?');
+    $sql = $pdo->prepare('SELECT * FROM administrador WHERE email = ? AND senha = ?');
     if ($sql->execute(array($email, $senha))) {
 
         $info = $sql->fetchAll(PDO::FETCH_ASSOC);

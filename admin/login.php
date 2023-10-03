@@ -23,8 +23,6 @@ include_once('inc/headerlogin.php');
       <div class="main">
          <div class="col-md-5 col-sm-12">
             <div class="login-form shadow">
-
-
             <form action="" method="post" class="my-5 f5 p-4 a">
                 <!-- CAMPOS DE INSERIR EMAIL E SENHA -->
                 <label class="form-label textmenu " for="id_email">Digite seu e-mail</label>
@@ -33,11 +31,9 @@ include_once('inc/headerlogin.php');
                 <input type="password" name="senha" id="id_senha" class="form-control ">
                 <input type="submit" class=" botao bt btn btn-secondary mt-3 " value="Entrar" name="entrar">
                 <br>
-                          
+                <br>
+               
             </form>
-
-
-
             </div>
          </div>
       </div>

@@ -7,20 +7,12 @@ body {
     background: #FFF;
 }
 
-.sidenav {
-    height: 100%;
-    background-image: url(../img/sidenav3.png);
-    padding-top: 20px;
-}
 
 /* .main {
     margin-top: 1rem;
 } */
 
 @media screen and (max-height: 767px) {
-    .sidenav {
-        opacity: 0%;
-    }
     .fundooo {
         margin: 0%;
     }
@@ -38,12 +30,6 @@ body {
 @media screen and (min-width: 768px) {
     .main {
         margin-left: 40%;
-    }
-    .sidenav {
-        width: 40%;
-        position: fixed;
-        top: 0;
-        left: 0;
     }
     .login-form {
         margin-top: 80%;
@@ -68,19 +54,6 @@ body {
     color: #fff;
 }
 
-.sidenav {
-    width: 27%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-
-@media screen and (max-width: 1000) {
-    .sidenav {
-        opacity: 0%;
-    }
-}
 
 .btn-secondary {
     color: rgb(255, 255, 255) !important;

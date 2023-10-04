@@ -41,12 +41,7 @@
     transition: transform .3s ease-in-out;
 }
 
-.fundo2 {
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    opacity: 80%;
-}
-
+ 
 .logo {
     padding: 535px 0px 0px 440px !important;
     margin-top: 35px;

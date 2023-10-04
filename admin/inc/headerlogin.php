@@ -16,6 +16,8 @@ include_once("security.php");
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/tetris.css">
     <link href="css/arthur.css" rel="stylesheet" type="text/css">
+    <link href="css/tetris.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="fundo2">

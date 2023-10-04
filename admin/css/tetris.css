@@ -3,7 +3,7 @@
 }
 
 .a {
-    background-color: rgba(212, 212, 212, 0.829)
+    background-color: rgba(212, 212, 212, 0.829);
 }
 
 .fundocinza {
@@ -22,7 +22,7 @@
 .list-group {
     background-color: rgb(211, 211, 211);
 }
-
+ 
 .accordion-item {
     background-color: rgb(211, 211, 211);
 }
@@ -45,6 +45,13 @@
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     opacity: 80%;
+    margin: auto;
+    display: block;
+    background-size: 100%;
+}
+.botaoentrar{
+    margin-bottom: -10px;
+    margin-top: 20px;
 }
 
 .logo {

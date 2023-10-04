@@ -7,22 +7,16 @@ body {
     background: #FFF;
 }
 
-.sidenav {
-    height: 100%;
-    background-image: url(../img/sidenav3.png);
-    padding-top: 20px;
-}
-
 /* .main {
     margin-top: 1rem;
 } */
 
-@media screen and (max-height: 767px) {
-    .sidenav {
-        opacity: 0%;
-    }
+@media screen and (max-height: 768px) {
     .fundooo {
         margin: 0%;
+    }
+    .botaoentrar{
+        width: 330px;
     }
 }
 
@@ -39,18 +33,15 @@ body {
     .main {
         margin-left: 40%;
     }
-    .sidenav {
-        width: 40%;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
     .login-form {
-        margin-top: 80%;
+        margin-top: 60%;
+        margin-right: 20%;
+        margin-left: -20%;
     }
     .register-form {
         margin-top: 20%;
     }
+    
 }
 
 .login-main-text {
@@ -68,17 +59,12 @@ body {
     color: #fff;
 }
 
-.sidenav {
-    width: 27%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-
-@media screen and (max-width: 1000) {
-    .sidenav {
-        opacity: 0%;
+@media screen and (min-height: 1000px) {
+    .login-form{
+        margin-top: 80%;
+    } 
+    .botaoentrar{
+        width: 430px;
     }
 }
 
@@ -111,6 +97,7 @@ body {
 
 .textmenu {
     color: black;
+    margin-top: 10px;
 }
 
 .fonte {

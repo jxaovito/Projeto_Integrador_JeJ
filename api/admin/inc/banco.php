@@ -14,6 +14,13 @@
     // $pdo= new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.";charset=utf8",DATABASE_USER,DATABASE_PASSWORD);   
 ?>
     <?php
+use Dotenv\Dotenv; 
+
+$path = dirname(__FILE__, 4);
+
+$dotenv = Dotenv\Dotenv::createImmutable($path);
+$dotenv->load();
+
   $dsn = "mysql:host={$_ENV["DB_HOST"]};dbname={$_ENV["DB_NAME"]}";
   $options = array(
     PDO::MYSQL_ATTR_SSL_CA => "C:\Users\joaov\Downloads\ca-bundle.crt",

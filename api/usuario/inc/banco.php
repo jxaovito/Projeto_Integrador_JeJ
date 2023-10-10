@@ -7,7 +7,7 @@
     define('DATABASE_PASSWORD','pscale_pw_S6cvt7oK7BVE9MkdvbwnVhpEIF6rP5RYTFCPOs8cSuh');
     
     $sslOptions = [
-        PDO::MYSQL_ATTR_SSL_CA => 'C:\Users\joaov\Downloads\cacert.pem',
+        PDO::MYSQL_ATTR_SSL_CA => 'C:\Users\joaov\Downloads\ca-bundle.crt',
     ];
 
     $pdo= new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.";charset=utf8",DATABASE_USER,DATABASE_PASSWORD, $sslOptions);   

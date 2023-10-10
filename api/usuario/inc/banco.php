@@ -12,10 +12,10 @@
 
     // $pdo= new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.";charset=utf8",DATABASE_USER,DATABASE_PASSWORD);   
 ?>
-    <?php
-    $dsn = "mysql:host={$_ENV["aws.connect.psdb.cloud"]};dbname={$_ENV["cronograma"]}";
-    $options = array(
-      PDO::MYSQL_ATTR_SSL_CA => "C:\Users\joaov\Downloads\ca-bundle.crt",
-    );
-    $pdo = new PDO($dsn, $_ENV["u16wsjbvfc7ivhtjw79w"], $_ENV["pscale_pw_S6cvt7oK7BVE9MkdvbwnVhpEIF6rP5RYTFCPOs8cSuh"], $options);
-  ?>
+  <?php
+  $dsn = "mysql:host={$_ENV["DB_HOST"]};dbname={$_ENV["DB_NAME"]}";
+  $options = array(
+    PDO::MYSQL_ATTR_SSL_CA => "C:\Users\joaov\Downloads\ca-bundle.crt",
+  );
+  $pdo = new PDO($dsn, $_ENV["DB_USERNAME"], $_ENV["DB_PASSWORD"], $options);
+?>

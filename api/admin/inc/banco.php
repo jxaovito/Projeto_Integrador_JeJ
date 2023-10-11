@@ -14,7 +14,6 @@
     // $pdo= new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.";charset=utf8",DATABASE_USER,DATABASE_PASSWORD);   
 ?>
     <?php
-use Dotenv\Dotenv; 
 
 $path = dirname(__FILE__, 4);
 

@@ -14,7 +14,7 @@
     // $pdo= new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.";charset=utf8",DATABASE_USER,DATABASE_PASSWORD);   
 ?>
     <?php
-require '/vendor/autoload.php';
+require 'C:\xampp\htdocs\Projeto_Integrador_JeJ\vendor';
 
 use Dotenv\Dotenv;
 

@@ -13,11 +13,17 @@
     // $pdo= new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.";charset=utf8",DATABASE_USER,DATABASE_PASSWORD);   
 ?>
   <?php
+require 'vendor/autoload.php';
 
-$path = dirname(__FILE__, 3);
+use Dotenv\Dotenv;
 
-$dotenv = Dotenv\Dotenv::createImmutable($path);
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
+
+// $path = dirname(__FILE__, 3);
+
+// $dotenv = Dotenv\Dotenv::createImmutable($path);
+// $dotenv->load();
 
   $ENV[VERCEL_FORCE_NO_BUILD_CACHE];
 

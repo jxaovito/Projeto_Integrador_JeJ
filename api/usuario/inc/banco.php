@@ -13,7 +13,7 @@
     // $pdo= new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.";charset=utf8",DATABASE_USER,DATABASE_PASSWORD);   
 ?>
   <?php
-require '../../../vendor/autoload.php';
+require_once(__DIR__ . '../../../vendor/autoload.php');
 
 use Dotenv\Dotenv;
 

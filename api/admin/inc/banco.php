@@ -1,10 +1,7 @@
 <?php
 
     // CONEXÃO AO BANCO DE DADOS
-    // define('DATABASE_HOST','aws.connect.psdb.cloud');
-    // define('DATABASE_NAME','cronograma');
-    // define('DATABASE_USER','u16wsjbvfc7ivhtjw79w');
-    // define('DATABASE_PASSWORD','pscale_pw_S6cvt7oK7BVE9MkdvbwnVhpEIF6rP5RYTFCPOs8cSuh');
+  
     
     // $sslOptions = [
     //     PDO::MYSQL_ATTR_SSL_CA => 'C:\Users\joaov\Downloads\ca-bundle.crt',
@@ -29,6 +26,11 @@
 //   $ENV[VERCEL_FORCE_NO_BUILD_CACHE];
 
   // $dsn = "mysql:host=aws.connect.psdb.cloud;dbname=cronograma";
+  define('DATABASE_HOST','aws.connect.psdb.cloud');
+  define('DATABASE_NAME','cronograma');
+  define('DATABASE_USER','u16wsjbvfc7ivhtjw79w');
+  define('DATABASE_PASSWORD','pscale_pw_S6cvt7oK7BVE9MkdvbwnVhpEIF6rP5RYTFCPOs8cSuh');
+  
   $options = array(
     PDO::MYSQL_ATTR_SSL_CA => "C:\Users\joaov\Downloads\ca-bundle.crt",
   );

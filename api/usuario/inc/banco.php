@@ -21,16 +21,18 @@
 // $dotenv->load();
 
 // require "../../../vendor/autoload.php";
-$path = dirname(__FILE__, 4);
+// $path = dirname(__FILE__, 4);
 
-$dotenv = Dotenv\Dotenv::createImmutable($path);
-$dotenv->load();
+// $dotenv = Dotenv\Dotenv::createImmutable($path);
+// $dotenv->load();
 
-  $ENV[VERCEL_FORCE_NO_BUILD_CACHE];
+//   $ENV[VERCEL_FORCE_NO_BUILD_CACHE];
 
-  $dsn = "mysql:host={$_ENV["DB_HOST"]};dbname={$_ENV["DB_NAME"]}";
+  // $dsn = "mysql:host=aws.connect.psdb.cloud;dbname=cronograma";
   $options = array(
     PDO::MYSQL_ATTR_SSL_CA => "C:\Users\joaov\Downloads\ca-bundle.crt",
   );
-  $pdo = new PDO($dsn, $_ENV["DB_USERNAME"], $_ENV["DB_PASSWORD"], $options);
+  
+    $pdo = new PDO('mysql:host='.DATABASE_HOST.';dbname='.DATABASE_NAME.";charset=utf8",DATABASE_USER,DATABASE_PASSWORD, $options);  
+  // $pdo = new PDO($dsn, $_ENV["DB_USERNAME"], $_ENV["DB_PASSWORD"], $options);
 ?>

@@ -1,7 +1,7 @@
 <?php
 
     // CONEXÃO AO BANCO DE DADOS
-    define('DATABASE_HOST','192.168.0.34:3307');
+    define('DATABASE_HOST','localhost:3307');
     define('DATABASE_NAME','cronograma');
     define('DATABASE_USER','jej');
     define('DATABASE_PASSWORD','xxx');

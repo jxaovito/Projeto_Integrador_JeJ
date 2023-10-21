@@ -3,7 +3,7 @@
 $titulo = "Administrador";
 $is_login = true;
 
-include_once('inc/usuario/executa_login.php');
+include_once('executa_login.php');
 include_once('inc/headerlogin.php');
 
 // if($_SESSION['is_logged'] = true){

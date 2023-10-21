@@ -1,7 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <?php
-include_once(dirname(__FILE__) . "/../banco.php");;
+include_once(dirname(__FILE__) . "../../../../banco/banco.php");;
 include 'codCalendario.php';
 $week = 3;
 $year = 2021;

@@ -1,6 +1,6 @@
 <?php
 
-include_once(dirname(__FILE__). "/../banco.php");
+include_once(dirname(__FILE__). "../../../../banco/banco.php");
 
     if(isset($_GET ['id'])){
         $cod_curso = $_GET['id'];

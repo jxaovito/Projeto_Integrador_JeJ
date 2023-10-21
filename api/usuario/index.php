@@ -1,7 +1,7 @@
 <?php
 $titulo = "Página inicial";
 include_once('inc/headerindex.php');
-include_once('inc/banco.php');
+include_once('../banco/banco.php');
 
 
 ?>

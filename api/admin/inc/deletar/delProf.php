@@ -1,6 +1,6 @@
 <?php
 
-include_once(dirname(__FILE__). "/../banco.php");
+include_once(dirname(__FILE__). "../../../../banco/banco.php");
 
 // PUXA CODIGO DA TURMA E CURSO
 if (isset($_GET['cod_turma'])){

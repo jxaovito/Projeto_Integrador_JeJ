@@ -1,8 +1,7 @@
 <?php
 
 @session_start();
-include_once(dirname(__FILE__) . "/../banco.php");
-
+include_once('../banco/banco.php');
 $aviso = "";
 
 // VERIFICA SE EMAIL E SENHA ESTÃO CADASTRADOS NO BANCO E MOSTRA O AVISO

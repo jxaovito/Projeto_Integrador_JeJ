@@ -40,7 +40,7 @@ include_once('banco/banco.php');
     <h2 class="">Escolha abaixo como quer entrar no sistema</h2>
   
     </div>
-    <div class="tituloindex1">
+    <div class="botoes tituloindex1">
     <a href="usuario/index.php" style="text-decoration: none;" class="">
     <button class="btn-entrar-index fourth-3">Entrar como usuário</button>
     </a>

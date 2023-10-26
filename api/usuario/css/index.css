@@ -8,8 +8,12 @@ margin:0px;
 
 .tituloindex1{
     text-align: center;
+    margin-top: 200px;
+    animation: moveToTop 1s linear;
 }
-
+.botoes {
+  margin-top: 30px;
+}
 .calendarioindex {
     width: 300px;
     margin-left: 500px;
@@ -63,6 +67,7 @@ margin:0px;
     -webkit-transition: background 300ms ease-in-out;
     transition: background 500ms ease-in-out;
     transition: 500ms linear;
+    margin-left: 10px;
   }
   .fourth-2:hover {
     background-position: 0;
@@ -119,8 +124,7 @@ margin:0px;
     -webkit-transition: background 1000ms ease-in-out;
     transition: background 600ms ease-in-out;
     transition: 500ms linear;
-    animation: moveToTop 1s linear;
-
+    margin-right: 10px;
   }
   .fourth-3:hover {
     background-position: 0;
@@ -129,8 +133,8 @@ margin:0px;
   }
   @keyframes moveToTop {
     from {
-        transform: translateY(200px);
-        opacity: 10%;
+        transform: translateY(300px);
+        opacity: 0%;
       }
       to {
         transform: translateY(0px);

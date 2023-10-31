@@ -75,6 +75,8 @@ if ($sql->execute()) {
 		
 	}
 }
+
+// INSERE O FERIADO NO CALENDARIO E NO BANCO
 $sql = $pdo->prepare('SELECT cod_feriado, data_feriado as dataFeriado FROM feriado');
 if ($sql->execute()) {
 	$info = $sql->fetchAll(PDO::FETCH_ASSOC);

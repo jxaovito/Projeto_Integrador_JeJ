@@ -13,14 +13,12 @@
   Este projeto tem como objetivo realizar um sistema em PHP que
 facilite a visualização e criação de cronogramas.
 
-## Modo de uso
+## Como usar
 
 ### Instalação
-* Como instalar o projeto
-* Clone o repositório na pasta usando o comando
-* git clone https://github.com/jxaovito/Projeto_Integrador_JeJ
-* Crie um banco de dados no MysqlSQL usando o arquivo banco.sql que consta na pasta Banco
-* Se senha inicial do Administrador precisa ser definida via Banco de Dados | a senha é xxx
+* Clone o repositório na pasta usando o comando: "git clone https://github.com/jxaovito/Projeto_Integrador_JeJ"
+* Crie um banco de dados no MySQL usando o arquivo banco.sql que consta na pasta Banco da raíz do projeto
+* O login e senha para acesso ao modo administrador tem que ser definido via banco de dados
 
 ### Como cadastrar novos usuários
-*Cadastros de novos usuários são feitos diretamente no Banco de Dados.
+*Cadastros de novos administradores são feitos diretamente no Banco de Dados.

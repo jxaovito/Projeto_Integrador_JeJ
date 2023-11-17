@@ -2,7 +2,6 @@
 $titulo = "Página inicial";
 include_once('inc/headerindex.php');
 include_once(dirname(__FILE__) . "../../banco/banco.php");
-include_once('inc/cardCurso.php');
 
 ?>
  

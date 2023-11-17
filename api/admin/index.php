@@ -1,7 +1,7 @@
 <?php
 $titulo = "Administrador";
 include_once('inc/headerindex.php');
-include_once('../banco/banco.php');
+include_once(dirname(__FILE__) . "../../banco/banco.php");
 include_once('inc/cadastros/cadCurso.php');
 include_once('inc/cadastros/cadTurma.php');
  

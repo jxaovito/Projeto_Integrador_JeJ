@@ -1,5 +1,7 @@
 <?php
 $titulo = "Página inicial";
+phpinfo();
+
 include_once('usuario/inc/headerindex.php');
 include_once(dirname(__FILE__) . "../banco/banco.php");
 

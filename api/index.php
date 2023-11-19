@@ -1,7 +1,7 @@
 <?php
 $titulo = "Página inicial";
-include_once('inc/headerindex.php');
-include_once(dirname(__FILE__) . "../../banco/banco.php");
+include_once('usuario/inc/headerindex.php');
+include_once(dirname(__FILE__) . "../banco/banco.php");
 
 ?>
  
@@ -17,11 +17,12 @@ include_once(dirname(__FILE__) . "../../banco/banco.php");
                     </div>
                     </div>
         <?php
-        include_once('inc/cardCurso.php');
+        include_once('usuario/inc/cardCurso.php');
         ?>
 
     </div>
 </div>
 
 
-<?php include_once('inc/footer.php');?>
+<?php include_once('usuario/inc/footer.php');
+?>

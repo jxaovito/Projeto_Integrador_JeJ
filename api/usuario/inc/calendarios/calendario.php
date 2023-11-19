@@ -38,7 +38,7 @@ if (isset($_GET['cod_curso'])) {
 							<a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?meses=7&cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">Julho</a>
 							<a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?meses=8&cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">Agosto</a>
 							<a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?meses=9&cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">Setembro</a>
-							<a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?meses=10&cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">outubro</a>
+							<a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?meses=10&cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">Outubro</a>
 							<a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?meses=11&cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">Novembro</a>
 							<a class="dropdown-item" style="text-decoration: none; color:black" href="cronograma.php?meses=12&cod_curso=<?php echo $codCurso ?>&cod_turma=<?php echo $codTurma ?>">Dezembro</a>
 					</li>

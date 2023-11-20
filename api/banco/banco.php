@@ -11,17 +11,14 @@
   <?php
 
   // CONEXÃO AO BANCO DE DADOS DO PLANETSCALE PARA DEPLOY NO VERCEL -- TESTE
-// require_once(__DIR__ . 'vendor/autoload.php');
 
-// $dotenv = Dotenv::createImmutable(__DIR__);
-// $dotenv->load();
+include __DIR__."/../../vendor/autoload.php";
 
-$hostname = $_ENV['DB_HOST'];
-$dbName = $_ENV['DB_NAME'];
-$username = $_ENV['DB_USERNAME'];
-$password = $_ENV['DB_PASSWORD'];
+$hostname = getenv('DB_HOST');
+$dbName = getenv('DB_NAME');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
 
-include_once('../../vendor/autoload.php');
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();

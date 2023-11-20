@@ -25,6 +25,12 @@ $options = array(
 	PDO::MYSQL_ATTR_SSL_CA => 'C:\Users\joaov\Downloads\cacert-2023-08-22.pem',
 );
 
+var_dump($_ENV['DB_HOST']);
+var_dump($_ENV['DB_NAME']);
+var_dump($_ENV['DB_PASSWORD']);
+var_dump($_ENV['DB_USERNAME']);
+
+
 
     $pdo = new PDO('mysql:host='.$_ENV['DB_HOST'].';dbname='.$_ENV['DB_NAME'].";charset=utf8",$_ENV['DB_USERNAME'],$_ENV['DB_PASSWORD'], $options);   
 

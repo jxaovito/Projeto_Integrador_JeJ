@@ -27,7 +27,7 @@ $dotenv->safeLoad();
     PDO::MYSQL_ATTR_SSL_CA => "C:\Users\joaov\Downloads\cacert.pem",
   );
   
-    $pdo = new PDO($hostname,$dbName,$username,$password, $options);  
+    $pdo = new PDO($hostname,$dbName,$username,$password);  
 
     if ($pdo->connect_error) {
       echo "Not connected to the database";

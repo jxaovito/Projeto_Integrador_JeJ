@@ -1,6 +1,8 @@
 <?php
 
 $rand = rand();
+$titulo = "Página inicial";
+include_once('banco/banco.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -24,21 +26,11 @@ $rand = rand();
 </head>
 
 <body class="indexfundo">
-
-<?php
-$titulo = "Página inicial";
-include_once('banco/banco.php');
-
-
-?>
-    
-
 <div class="container">
     <div class="row tituloindex1">
    <img class="calendarioindex" src="usuario/img/calendario.png" alt="">
     <h1 class="">Bem vindo(a) ao cronograma online!</h1>
     <h2 class="">Escolha abaixo como quer entrar no sistema</h2>
-  
     </div>
     <div class="botoes tituloindex1">
     <a href="usuario/index.php" style="text-decoration: none;" class="">

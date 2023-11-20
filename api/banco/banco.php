@@ -13,22 +13,23 @@
   // CONEXÃO AO BANCO DE DADOS DO PLANETSCALE PARA DEPLOY NO VERCEL -- TESTE
 // require_once(__DIR__ . 'vendor/autoload.php');
 
-use Dotenv\Dotenv;
-
 // $dotenv = Dotenv::createImmutable(__DIR__);
 // $dotenv->load();
 
 require_once "../../vendor/autoload.php";
-$path = dirname(__FILE__, 3);
+$path = dirname(__FILE__, 2);
 
 $dotenv = Dotenv\Dotenv::createImmutable($path);
 $dotenv->load();
-
-  $ENV[VERCEL_FORCE_NO_BUILD_CACHE];
 
   $options = array(
     PDO::MYSQL_ATTR_SSL_CA => "C:\Users\joaov\Downloads\cacert.pem",
   );
   
-    $pdo = new PDO($ENV_["DB_HOST"],$ENV_["DB_NAME"],$_ENV["DB_USERNAME"],$ENV_["DB_PASSWORD"], $options);  
+    $pdo = new PDO($ENV_['DB_HOST'],$ENV_['DB_NAME'],$_ENV['DB_USERNAME'],$ENV_['DB_PASSWORD'], $options);  
+    if ($pdo->connect_error) {
+      echo "Not connected to the database";
+  } else {
+      echo "Successfully connected to the database";
+  }
 ?>

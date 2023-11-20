@@ -16,17 +16,22 @@
 // $dotenv = Dotenv::createImmutable(__DIR__);
 // $dotenv->load();
 
-include_once(dirname(__FILE__) . "../../vendor/autoload.php");
-$path = dirname(__FILE__, 2);
+$hostname = $_ENV['DB_HOST'];
+$dbName = $_ENV['DB_NAME'];
+$username = $_ENV['DB_USERNAME'];
+$password = $_ENV['DB_PASSWORD'];
 
-$dotenv = Dotenv\Dotenv::createImmutable($path);
-$dotenv->load();
+include_once('../../vendor/autoload.php');
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->safeLoad();
 
   $options = array(
     PDO::MYSQL_ATTR_SSL_CA => "C:\Users\joaov\Downloads\cacert.pem",
   );
   
-    $pdo = new PDO($ENV_['DB_HOST'],$ENV_['DB_NAME'],$_ENV['DB_USERNAME'],$ENV_['DB_PASSWORD'], $options);  
+    $pdo = new PDO($hostname,$dbName,$username,$password, $options);  
+
     if ($pdo->connect_error) {
       echo "Not connected to the database";
   } else {

@@ -1,8 +1,8 @@
 <?php
 $titulo = "Página inicial";
 
-include_once('api/usuario/inc/headerindex.php');
-include_once(dirname(__FILE__) . "api/banco/banco.php");
+include_once('usuario/inc/headerindex.php');
+include_once(dirname(__FILE__) . "banco/banco.php");
 
 ?>
  
@@ -12,13 +12,13 @@ include_once(dirname(__FILE__) . "api/banco/banco.php");
     <h1 class="mt-3">Selecione sua Turma: </h1>
   
         <?php
-        include_once('api/usuario/inc/cardCurso.php');
+        include_once('usuario/inc/cardCurso.php');
         ?>
 
     </div>
     <div class="d-flex">
     <div class="ms-auto bd-highlight">
-                        <a href="api/admin/login.php" style="text-decoration: none;" class="float-start cor border">
+                        <a href="admin/login.php" style="text-decoration: none;" class="float-start cor border">
                         <button class="1 btn-sair fourth float-end">Entrar como administrador</button>
                         </a>
                     </div>
@@ -26,5 +26,5 @@ include_once(dirname(__FILE__) . "api/banco/banco.php");
 </div>
 
 
-<?php include_once('api/usuario/inc/footer.php');
+<?php include_once('usuario/inc/footer.php');
 ?>

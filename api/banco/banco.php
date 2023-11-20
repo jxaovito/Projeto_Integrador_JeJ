@@ -18,14 +18,12 @@ $hostname = getenv('DB_HOST');
 $dbName = getenv('DB_NAME');
 $username = getenv('DB_USERNAME');
 $password = getenv('DB_PASSWORD');
-$options = getenv('MYSQL_ATTR_SSL_CA');
+// $options = getenv('MYSQL_ATTR_SSL_CA');
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
-
-  
-    $pdo = new PDO($hostname,$dbName,$username,$password,$options);  
+    $pdo = new PDO($hostname,$dbName,$username,$password,$options);
 
     if ($pdo->connect_error) {
       echo "Not connected to the database";

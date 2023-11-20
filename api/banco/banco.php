@@ -16,7 +16,7 @@
 // $dotenv = Dotenv::createImmutable(__DIR__);
 // $dotenv->load();
 
-require_once "../../vendor/autoload.php";
+include_once(dirname(__FILE__) . "../../vendor/autoload.php");
 $path = dirname(__FILE__, 2);
 
 $dotenv = Dotenv\Dotenv::createImmutable($path);

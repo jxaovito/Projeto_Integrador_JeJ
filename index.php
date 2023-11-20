@@ -1,9 +1,8 @@
 <?php
 $titulo = "Página inicial";
-phpinfo();
 
-include_once('usuario/inc/headerindex.php');
-include_once(dirname(__FILE__) . "../banco/banco.php");
+include_once('api/usuario/inc/headerindex.php');
+include_once(dirname(__FILE__) . "api/banco/banco.php");
 
 ?>
  
@@ -13,7 +12,7 @@ include_once(dirname(__FILE__) . "../banco/banco.php");
     <h1 class="mt-3">Selecione sua Turma: </h1>
   
         <?php
-        include_once('usuario/inc/cardCurso.php');
+        include_once('api/usuario/inc/cardCurso.php');
         ?>
 
     </div>
@@ -27,5 +26,5 @@ include_once(dirname(__FILE__) . "../banco/banco.php");
 </div>
 
 
-<?php include_once('usuario/inc/footer.php');
+<?php include_once('api/usuario/inc/footer.php');
 ?>

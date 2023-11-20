@@ -18,7 +18,7 @@ include_once(dirname(__FILE__) . "api/banco/banco.php");
     </div>
     <div class="d-flex">
     <div class="ms-auto bd-highlight">
-                        <a href="../admin/login.php" style="text-decoration: none;" class="float-start cor border">
+                        <a href="api/admin/login.php" style="text-decoration: none;" class="float-start cor border">
                         <button class="1 btn-sair fourth float-end">Entrar como administrador</button>
                         </a>
                     </div>

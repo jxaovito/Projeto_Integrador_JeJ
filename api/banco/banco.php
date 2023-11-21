@@ -21,9 +21,9 @@ $dbName = getenv('DB_NAME');
 $username = getenv('DB_USERNAME');
 $password = getenv('DB_PASSWORD');
 // $dsn = getenv('MYSQL_ATTR_SSL_CA');
-$options = array(
-	PDO::MYSQL_ATTR_SSL_CA => 'C:\Users\joaov\Downloads\cacert-2023-08-22.pem',
-);
+// $options = array(
+// 	PDO::MYSQL_ATTR_SSL_CA => 'C:\Users\joaov\Downloads\cacert-2023-08-22.pem',
+// );
 
 var_dump($_ENV['DB_HOST']);
 var_dump($_ENV['DB_NAME']);
@@ -32,7 +32,7 @@ var_dump($_ENV['DB_USERNAME']);
 
 
 
-    $pdo = new PDO('mysql:host='.$_ENV['DB_HOST'].';dbname='.$_ENV['DB_NAME'].";charset=utf8",$_ENV['DB_USERNAME'],$_ENV['DB_PASSWORD'], $options);   
+    $pdo = new PDO('mysql:host='.$_ENV['DB_HOST'].';dbname='.$_ENV['DB_NAME'].";charset=utf8",$_ENV['DB_USERNAME'],$_ENV['DB_PASSWORD'], $_ENV['PLANETSCALE_SSL_CERT_PATH']);   
 
 
 ?>

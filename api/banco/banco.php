@@ -16,10 +16,10 @@ include __DIR__."/../../vendor/autoload.php";
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->safeLoad();
 
-$hostname = getenv('DB_HOST');
-$dbName = getenv('DB_NAME');
-$username = getenv('DB_USERNAME');
-$password = getenv('DB_PASSWORD');
+// $hostname = getenv('DB_HOST');
+// $dbName = getenv('DB_NAME');
+// $username = getenv('DB_USERNAME');
+// $password = getenv('DB_PASSWORD');
 // $dsn = getenv('MYSQL_ATTR_SSL_CA');
 // $options = array(
 // 	PDO::MYSQL_ATTR_SSL_CA => 'C:\Users\joaov\Downloads\cacert-2023-08-22.pem',
@@ -30,9 +30,7 @@ var_dump($_ENV['DB_NAME']);
 var_dump($_ENV['DB_PASSWORD']);
 var_dump($_ENV['DB_USERNAME']);
 
-
-
-    $pdo = new PDO('mysql:host='.$_ENV['DB_HOST'].';dbname='.$_ENV['DB_NAME'].";charset=utf8",$_ENV['DB_USERNAME'],$_ENV['DB_PASSWORD'], $_ENV['PLANETSCALE_SSL_CERT_PATH']);   
+    $pdo = new PDO('mysql:host='.getenv('DB_HOST').';dbname='.getenv('DB_NAME').";charset=utf8",getenv('DB_USERNAME'),getenv('DB_PASSWORD'),getenv(PLANETSCALE_SSL_CERT_PATH));   
 
 
 ?>

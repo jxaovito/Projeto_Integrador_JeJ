@@ -30,7 +30,7 @@ var_dump($_ENV['DB_NAME']);
 var_dump($_ENV['DB_PASSWORD']);
 var_dump($_ENV['DB_USERNAME']);
 
-    $pdo = new PDO('mysql:host='.getenv('DB_HOST').';dbname='.getenv('DB_NAME').";charset=utf8",getenv('DB_USERNAME'),getenv('DB_PASSWORD'),getenv(PLANETSCALE_SSL_CERT_PATH));   
+    $pdo = new PDO('mysql:host='.getenv('DB_HOST').';dbname='.getenv('DB_NAME').";charset=utf8",getenv('DB_USERNAME'),getenv('DB_PASSWORD'),getenv('MYSQL_ATTR_SSL_CA'));   
 
 
 ?>

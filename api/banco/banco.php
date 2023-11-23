@@ -37,7 +37,7 @@ $hostname = $_ENV['DB_HOST'];
 $dbName = $_ENV['DB_NAME'];
 $username = $_ENV['DB_USERNAME'];
 $password = $_ENV['DB_PASSWORD'];
-$ssl = $_ENV['MYSQL_ATTR_SSL_CA'];
+$ssl = '/etc/pki/tls/certs/ca-bundle.crt';
 
 
 $mysqli = mysqli_init();

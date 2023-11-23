@@ -22,10 +22,10 @@ $rand = rand();
     <script src="js/app.js"></script>
     <link href="css/calendarioAdmin1.css" rel="stylesheet" type="text/css">
     <link href="css/calendarioAdmin2" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="src/css/estilo.css">
-    <link rel="stylesheet" href="src/css/tetris.css">
-    <link rel="stylesheet" href="src/css/index.css">
-    <link href="src/css/arthur.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="api/src/css/estilo.css">
+    <link rel="stylesheet" href="api/src/css/tetris.css">
+    <link rel="stylesheet" href="api/src/css/index.css">
+    <link href="api/src/css/arthur.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>

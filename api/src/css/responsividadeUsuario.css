@@ -7,16 +7,10 @@ body {
     background: #FFF;
 }
 
-/* .main {
-    margin-top: 1rem;
-} */
 
-@media screen and (max-height: 768px) {
+@media screen and (max-height: 767px) {
     .fundooo {
         margin: 0%;
-    }
-    .botaoentrar{
-        width: 330px;
     }
 }
 
@@ -34,14 +28,11 @@ body {
         margin-left: 40%;
     }
     .login-form {
-        margin-top: 60%;
-        margin-right: 20%;
-        margin-left: -20%;
+        margin-top: 80%;
     }
     .register-form {
         margin-top: 20%;
     }
-    
 }
 
 .login-main-text {
@@ -59,14 +50,6 @@ body {
     color: #fff;
 }
 
-@media screen and (min-height: 1000px) {
-    .login-form{
-        margin-top: 80%;
-    } 
-    .botaoentrar{
-        width: 430px;
-    }
-}
 
 .btn-secondary {
     color: rgb(255, 255, 255) !important;
@@ -75,29 +58,12 @@ body {
 }
 
 
-/* .form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #000000d8 !important;
-    background-color: #fffefef5 !important;
-    background-clip: padding-box;
-    border: 1px solid #0000009f !important;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
-} */
-
 .fundooo {
     background-image: url(../img/download.jpg);
 }
 
 .textmenu {
     color: black;
-    margin-top: 10px;
 }
 
 .fonte {
@@ -115,7 +81,57 @@ body {
     background-color: #13305c;
     border-color: #14438a;
 }
-.btn-azul:hover {
+
+.preto {
+    color: rgb(100, 98, 98);
+}
+
+.a {
+    background-color: rgba(212, 212, 212, 0.829)
+}
+
+.fundocinza {
+    background-color: #e9e6e6;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #eeeeee;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.list-group {
+    background-color: rgb(211, 211, 211);
+}
+
+.accordion-item {
+    background-color: rgb(211, 211, 211);
+}
+
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: hidden;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+}
+
+ 
+.logo {
+    padding: 535px 0px 0px 440px !important;
+    margin-top: 35px;
+}
+.dropdown-item:active {
     color: #fff;
-    background-color: #d63b0b;
+    text-decoration: none;
+    background-color:transparent !important;
 }

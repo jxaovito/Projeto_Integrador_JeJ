@@ -11,9 +11,11 @@ margin:0px;
     margin-top: 200px;
     animation: moveToTop 1s linear;
 }
+
 .botoes {
   margin-top: 30px;
 }
+
 .calendarioindex {
     width: 300px;
     margin-left: 500px;
@@ -80,11 +82,6 @@ margin:0px;
   }
   
 
-/*   
-  .cor-a {
-    color:#882c10;;
-    text-decoration: underline;
-}   */
 
   .btn-entrar-index{
     box-sizing: border-box;

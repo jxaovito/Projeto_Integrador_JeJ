@@ -1,6 +1,4 @@
  <?php
-
-  // CONEXÃO AO BANCO DE DADOS DO PLANETSCALE PARA DEPLOY NO VERCEL 
 include __DIR__."/../../vendor/autoload.php";
 
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
@@ -18,8 +16,4 @@ $mysqli->ssl_set(NULL, NULL, $ssl, NULL, NULL);
 $mysqli->real_connect($hostname, $username, $password, $dbName);
 
 
-if ($mysqli->connect_error) {
-    echo 'Erro ao conectar no banco de dados';
-} else {
-    echo "Conectado com sucesso";
-}?>
+?>

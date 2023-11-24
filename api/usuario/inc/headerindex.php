@@ -14,13 +14,13 @@ $rand = rand();
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="js/app.js"></script>
-    <link href="css/calendario_1.css" rel="stylesheet" type="text/css">
-    <link href="css/calendario_2.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/tetris.css">
-    <link rel="stylesheet" href="../admin/css/index.css">
-    <link href="css/arthur.css" rel="stylesheet" type="text/css">
+    <link href="../../api/src/css/calendarioUsuario1.css" rel="stylesheet" type="text/css">
+    <link href="../../api/src/css/calendarioUsuario2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../api/src/css/landingPageUsuario.css">
+    <link rel="stylesheet" href="../../api/src/css/responsividadeUsuario.css">
+    <link rel="stylesheet" href="../../api/src/css/backgrounds.css">
+    <link rel="stylesheet" href="../../api/src/css/index.css">
+    <link href="../../api/src/css/arthur.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 

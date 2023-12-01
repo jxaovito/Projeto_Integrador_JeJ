@@ -15,7 +15,7 @@ if (isset($_GET['cod_curso'])) {
 <!-- ABA DO TOPO NO CALENDARIO DO ADMINISTRADOR -->
 <div style="padding: 3px;" class="d-flex align-items-center mb-3 shadow fundo_menu">
     <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-        <img class="img-fluid " src="../../api/src/img/menularanja.png" alt="">
+        <img class="img-fluid " src="../../src/img/menularanja.png" alt="">
     </a>
     <h5 class="px-4" style="color: #eeeeee; margin:0px;">Cronograma</h5>
 </div>

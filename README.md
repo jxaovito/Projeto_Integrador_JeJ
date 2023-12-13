@@ -1,6 +1,7 @@
 # Projeto Integrador JeJ
- Equipe:
- 
+_Um sistema que tem como objetivo facilitar criação e visualização de cronogramas escolares._
+
+## Equipe
 * @Rafael-SRS
 * @jxaovito
 * @Gabriel0Adrian
@@ -8,17 +9,27 @@
 * @CRISTOPHERLATENEK
 * @joaovsoousa
 
+## Tecnologias utilizadas
+- Front-end baseado em HTML, CSS, Bootstrap e JQuery
+- Back-end em PHP
+- Banco de Dados MySQL
 
-## Objetivo do Projeto
-  Este projeto tem como objetivo realizar um sistema em PHP que
-facilite a visualização e criação de cronogramas.
-
-## Como usar
+## Features do Sistema
+- Gerenciamento de cursos e turmas por parte do administrador
+- Gerenciamento do cadastro dos professores
+- Criação e edição de feriados
+- Gerenciamento de disciplinas dentro dos cursos
+- Visualização do calendário individual de cada turma com todos os meses do ano
+- Visualização de todos os cursos e turmas
 
 ### Instalação
-* Clone o repositório na pasta usando o comando: "git clone https://github.com/jxaovito/Projeto_Integrador_JeJ"
-* Crie um banco de dados no MySQL usando o arquivo banco.sql que consta na pasta Banco da raíz do projeto
-* O login e senha para acesso ao modo administrador tem que ser definido via banco de dados
+* Clone o repositório em uma pasta usando o comando: "git clone https://github.com/jxaovito/Projeto_Integrador_JeJ"
+* Exporte o banco de dados usando o arquivo banco.sql que consta na pasta "banco" dentro da pasta "api"
+* Crie um arquivo .ENV e configure a conexão ao banco
+* Após abrir a conexão localmente, acesse o localhost
 
-### Como cadastrar novos usuários
-*Cadastros de novos administradores são feitos diretamente no Banco de Dados.
+```
+Login padrão do administrador:
+admin@app.com
+password
+```

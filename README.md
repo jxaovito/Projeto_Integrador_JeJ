@@ -1,4 +1,4 @@
-# Projeto Integrador JeJ
+# Cronograma Escolar / Projeto Integrador
 _Um sistema que tem como objetivo facilitar criação e visualização de cronogramas escolares._
 
 ## Equipe

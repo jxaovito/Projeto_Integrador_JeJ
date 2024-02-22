@@ -13,11 +13,10 @@ include_once('banco/banco.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="usuario/css/estilo.css">
-    <link rel="stylesheet" href="usuario/css/tetris.css">
-    <link rel="stylesheet" href="admin/css/index.css">
-    <link rel="stylesheet" href="usuario/css/index.css">
-    <link href="usuario/css/arthur.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="src/css/backgrounds.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/landing_page_usuario.css">
+    <link href="src/css/responsividade_usuario.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -27,7 +26,7 @@ include_once('banco/banco.php');
 <body class="indexfundo">
 <div class="container">
     <div class="row tituloindex1">
-   <img class="calendarioindex" src="usuario/img/calendario.png" alt="">
+   <img class="calendarioindex" src="src/img/calendario.png" alt="">
     <h1 class="">Bem vindo(a) ao cronograma online!</h1>
     <h2 class="">Escolha abaixo como quer entrar no sistema</h2>
     </div>

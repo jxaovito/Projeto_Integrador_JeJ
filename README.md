@@ -31,5 +31,5 @@ _Um sistema que tem como objetivo facilitar criação e visualização de cronog
 ```
 Login padrão do administrador:
 admin@app.com
-password
+senha
 ```

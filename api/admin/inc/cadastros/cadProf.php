@@ -19,11 +19,6 @@ if (isset($_POST['cprof'])&& $_POST['randcheck']== $_SESSION['rand']) {
 
    
         $sql = $pdo -> prepare("INSERT INTO professor (cod_professor,nome,cod_curso,cod_turma) values (null,?,$codCurso,$codTurma)");
-
-        if($sql -> execute(array($nomeProf))){
-            
-        } else {
-            
-        }     
+ 
             }
 

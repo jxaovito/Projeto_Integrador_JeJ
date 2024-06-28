@@ -2,7 +2,7 @@
 _Um sistema que tem como objetivo facilitar criação e visualização de cronogramas escolares._
 
 ## Equipe
-* @Rafael-SRS
+* @rafaelsrs
 * @jxaovito
 * @Gabriel0Adrian
 * @Arthurmarcoswenkdossantos
